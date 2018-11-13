@@ -16,7 +16,7 @@
 [ext_resource path="res://textures/goalkeeper-red.png" type="Texture" id=14]
 [ext_resource path="res://textures/goalkeeper-blue.png" type="Texture" id=15]
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
 "frames": [ ExtResource( 7 ) ],
@@ -25,17 +25,17 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=3]
+[sub_resource type="CircleShape2D" id=2]
 
 custom_solver_bias = 0.0
 radius = 10.0
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
 extents = Vector2( 15.0455, 13.9633 )
 
-[sub_resource type="SpriteFrames" id=5]
+[sub_resource type="SpriteFrames" id=4]
 
 animations = [ {
 "frames": [ ExtResource( 9 ) ],
@@ -44,7 +44,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=6]
+[sub_resource type="SpriteFrames" id=5]
 
 animations = [ {
 "frames": [ ExtResource( 10 ) ],
@@ -53,7 +53,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=7]
+[sub_resource type="SpriteFrames" id=6]
 
 animations = [ {
 "frames": [ ExtResource( 12 ) ],
@@ -62,7 +62,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=11]
+[sub_resource type="SpriteFrames" id=7]
 
 animations = [ {
 "frames": [ ExtResource( 14 ) ],
@@ -71,12 +71,12 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=8]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10.3103, 11.6589 )
 
-[sub_resource type="SpriteFrames" id=10]
+[sub_resource type="SpriteFrames" id=9]
 
 animations = [ {
 "frames": [ ExtResource( 15 ) ],
@@ -166,6 +166,7 @@ __meta__ = {
 
 [node name="RedGoal" type="Node2D" parent="." index="1"]
 
+editor/display_folded = true
 position = Vector2( 119, 300 )
 
 [node name="GoalTexture" type="TextureRect" parent="RedGoal" index="0"]
@@ -217,6 +218,7 @@ __meta__ = {
 
 [node name="GoalPhysic" type="StaticBody2D" parent="RedGoal" index="2"]
 
+editor/display_folded = true
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -320,7 +322,7 @@ __meta__ = {
 
 position = Vector2( 2.11377, 3.38242 )
 scale = Vector2( 0.0664821, 0.0657851 )
-frames = SubResource( 2 )
+frames = SubResource( 1 )
 animation = "default"
 __meta__ = {
 "_edit_lock_": true
@@ -329,7 +331,7 @@ __meta__ = {
 [node name="DiskCollision" type="CollisionShape2D" parent="Disk" index="1"]
 
 position = Vector2( 2.26477, 3.23532 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -348,7 +350,7 @@ position = Vector2( -293.382, -115.008 )
 script = ExtResource( 8 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Players/Left1" index="0"]
+[node name="Stick" type="KinematicBody2D" parent="Players/Left1" index="0"]
 
 editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
@@ -362,20 +364,20 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left1/KinematicBody2D" index="0"]
+[node name="Stick" type="CollisionShape2D" parent="Players/Left1/Stick" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left1/KinematicBody2D" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left1/Stick" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
-frames = SubResource( 5 )
+frames = SubResource( 4 )
 animation = "default"
 __meta__ = {
 "_edit_lock_": true
@@ -384,7 +386,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left1" index="1"]
 
 scale = Vector2( 0.167442, 0.168367 )
-frames = SubResource( 6 )
+frames = SubResource( 5 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
@@ -398,7 +400,7 @@ position = Vector2( -293.382, 118.787 )
 script = ExtResource( 8 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Players/Left2" index="0"]
+[node name="Stick" type="KinematicBody2D" parent="Players/Left2" index="0"]
 
 editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
@@ -412,20 +414,20 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left2/KinematicBody2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left2/Stick" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left2/KinematicBody2D" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left2/Stick" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
-frames = SubResource( 5 )
+frames = SubResource( 4 )
 animation = "default"
 __meta__ = {
 "_edit_lock_": true
@@ -434,7 +436,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left2" index="1"]
 
 scale = Vector2( 0.167442, 0.168367 )
-frames = SubResource( 6 )
+frames = SubResource( 5 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
@@ -448,7 +450,7 @@ position = Vector2( -102.8, -164.869 )
 script = ExtResource( 8 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Players/Left3" index="0"]
+[node name="Stick" type="KinematicBody2D" parent="Players/Left3" index="0"]
 
 editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
@@ -462,20 +464,20 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left3/KinematicBody2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left3/Stick" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left3/KinematicBody2D" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left3/Stick" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
-frames = SubResource( 5 )
+frames = SubResource( 4 )
 animation = "default"
 __meta__ = {
 "_edit_lock_": true
@@ -484,7 +486,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left3" index="1"]
 
 scale = Vector2( 0.167442, 0.168367 )
-frames = SubResource( 6 )
+frames = SubResource( 5 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
@@ -498,7 +500,7 @@ position = Vector2( -101.692, 164.217 )
 script = ExtResource( 8 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Players/Left4" index="0"]
+[node name="Stick" type="KinematicBody2D" parent="Players/Left4" index="0"]
 
 editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
@@ -512,20 +514,20 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left4/KinematicBody2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left4/Stick" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left4/KinematicBody2D" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left4/Stick" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
-frames = SubResource( 5 )
+frames = SubResource( 4 )
 animation = "default"
 __meta__ = {
 "_edit_lock_": true
@@ -534,7 +536,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left4" index="1"]
 
 scale = Vector2( 0.167442, 0.168367 )
-frames = SubResource( 6 )
+frames = SubResource( 5 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
@@ -548,7 +550,7 @@ position = Vector2( -64.019, -0.880188 )
 script = ExtResource( 8 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Players/Left5" index="0"]
+[node name="Stick" type="KinematicBody2D" parent="Players/Left5" index="0"]
 
 editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
@@ -562,20 +564,20 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left5/KinematicBody2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left5/Stick" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left5/KinematicBody2D" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left5/Stick" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
-frames = SubResource( 5 )
+frames = SubResource( 4 )
 animation = "default"
 __meta__ = {
 "_edit_lock_": true
@@ -584,7 +586,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left5" index="1"]
 
 scale = Vector2( 0.167442, 0.168367 )
-frames = SubResource( 6 )
+frames = SubResource( 5 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
@@ -598,7 +600,7 @@ position = Vector2( 291.66, -113.9 )
 script = ExtResource( 11 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Players/Rigth1" index="0"]
+[node name="Stick" type="KinematicBody2D" parent="Players/Rigth1" index="0"]
 
 editor/display_folded = true
 position = Vector2( 39.0845, -0.191833 )
@@ -612,20 +614,20 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth1/KinematicBody2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth1/Stick" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth1/KinematicBody2D" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth1/Stick" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
-frames = SubResource( 5 )
+frames = SubResource( 4 )
 animation = "default"
 __meta__ = {
 "_edit_lock_": true
@@ -634,7 +636,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth1" index="1"]
 
 scale = Vector2( 0.167442, 0.168367 )
-frames = SubResource( 7 )
+frames = SubResource( 6 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
@@ -648,7 +650,7 @@ position = Vector2( 290.333, 116.971 )
 script = ExtResource( 11 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Players/Rigth2" index="0"]
+[node name="Stick" type="KinematicBody2D" parent="Players/Rigth2" index="0"]
 
 editor/display_folded = true
 position = Vector2( 39.0845, -0.191833 )
@@ -662,20 +664,20 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth2/KinematicBody2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth2/Stick" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth2/KinematicBody2D" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth2/Stick" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
-frames = SubResource( 5 )
+frames = SubResource( 4 )
 animation = "default"
 __meta__ = {
 "_edit_lock_": true
@@ -684,7 +686,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth2" index="1"]
 
 scale = Vector2( 0.167442, 0.168367 )
-frames = SubResource( 7 )
+frames = SubResource( 6 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
@@ -698,7 +700,7 @@ position = Vector2( 96.3329, 163.971 )
 script = ExtResource( 11 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Players/Rigth3" index="0"]
+[node name="Stick" type="KinematicBody2D" parent="Players/Rigth3" index="0"]
 
 editor/display_folded = true
 position = Vector2( 39.0845, -0.191833 )
@@ -712,20 +714,20 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth3/KinematicBody2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth3/Stick" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth3/KinematicBody2D" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth3/Stick" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
-frames = SubResource( 5 )
+frames = SubResource( 4 )
 animation = "default"
 __meta__ = {
 "_edit_lock_": true
@@ -734,7 +736,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth3" index="1"]
 
 scale = Vector2( 0.167442, 0.168367 )
-frames = SubResource( 7 )
+frames = SubResource( 6 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
@@ -748,7 +750,7 @@ position = Vector2( 60.3329, -1.02927 )
 script = ExtResource( 11 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Players/Rigth4" index="0"]
+[node name="Stick" type="KinematicBody2D" parent="Players/Rigth4" index="0"]
 
 editor/display_folded = true
 position = Vector2( 39.0845, -0.191833 )
@@ -762,20 +764,20 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth4/KinematicBody2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth4/Stick" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth4/KinematicBody2D" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth4/Stick" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
-frames = SubResource( 5 )
+frames = SubResource( 4 )
 animation = "default"
 __meta__ = {
 "_edit_lock_": true
@@ -784,7 +786,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth4" index="1"]
 
 scale = Vector2( 0.167442, 0.168367 )
-frames = SubResource( 7 )
+frames = SubResource( 6 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
@@ -798,7 +800,7 @@ position = Vector2( 96.3329, -164.029 )
 script = ExtResource( 11 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Players/Rigth5" index="0"]
+[node name="Stick" type="KinematicBody2D" parent="Players/Rigth5" index="0"]
 
 editor/display_folded = true
 position = Vector2( 39.0845, -0.191833 )
@@ -812,20 +814,20 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth5/KinematicBody2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth5/Stick" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth5/KinematicBody2D" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth5/Stick" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
-frames = SubResource( 5 )
+frames = SubResource( 4 )
 animation = "default"
 __meta__ = {
 "_edit_lock_": true
@@ -834,7 +836,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth5" index="1"]
 
 scale = Vector2( 0.167442, 0.168367 )
-frames = SubResource( 7 )
+frames = SubResource( 6 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
@@ -843,9 +845,10 @@ __meta__ = {
 
 [node name="GoalKeeperRed" type="Node2D" parent="Players" index="10"]
 
+editor/display_folded = true
 position = Vector2( -345.595, 3.58621 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Players/GoalKeeperRed" index="0"]
+[node name="Stick" type="KinematicBody2D" parent="Players/GoalKeeperRed" index="0"]
 
 position = Vector2( -2.22101, -2.05219 )
 scale = Vector2( 0.293992, 0.520579 )
@@ -859,30 +862,31 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/GoalKeeperRed/KinematicBody2D" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/GoalKeeperRed/Stick" index="0"]
 
 position = Vector2( -3.4879, -0.946372 )
 scale = Vector2( 0.325852, 0.214692 )
-frames = SubResource( 11 )
+frames = SubResource( 7 )
 animation = "default"
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/GoalKeeperRed/KinematicBody2D" index="1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/GoalKeeperRed/Stick" index="1"]
 
 position = Vector2( -4.5062, -0.371337 )
 scale = Vector2( 3.28966, 2.78533 )
-shape = SubResource( 9 )
+shape = SubResource( 8 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="GoalKeeperBlue" type="Node2D" parent="Players" index="11"]
 
+editor/display_folded = true
 position = Vector2( 356.549, 3.58621 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Players/GoalKeeperBlue" index="0"]
+[node name="Stick" type="KinematicBody2D" parent="Players/GoalKeeperBlue" index="0"]
 
 position = Vector2( -2.22101, -2.05219 )
 scale = Vector2( 0.293992, 0.520579 )
@@ -896,21 +900,21 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/GoalKeeperBlue/KinematicBody2D" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/GoalKeeperBlue/Stick" index="0"]
 
 position = Vector2( -3.4879, -0.946372 )
 scale = Vector2( 0.325852, 0.214692 )
-frames = SubResource( 10 )
+frames = SubResource( 9 )
 animation = "default"
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/GoalKeeperBlue/KinematicBody2D" index="1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/GoalKeeperBlue/Stick" index="1"]
 
 position = Vector2( -4.5062, -0.371337 )
 scale = Vector2( 3.28966, 2.78533 )
-shape = SubResource( 9 )
+shape = SubResource( 8 )
 __meta__ = {
 "_edit_lock_": true
 }
