@@ -4,7 +4,7 @@ var ROT_MAX_W
 var ROT_MAX_S
 var INIT_ROT
 
-const SPEED = 10*PI #duas voltas por segundo
+const SPEED = 5*PI #duas voltas por segundo
 
 func _ready():
 	ROT_MAX_W = rotation + PI
