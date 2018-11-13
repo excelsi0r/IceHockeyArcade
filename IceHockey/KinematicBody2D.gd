@@ -19,3 +19,9 @@ func _process(delta):
 		curr += 1
 
 	pass
+
+func hit(sec):
+	$Stick.disabled = true
+	yield(get_tree().create_timer(sec), "timeout")
+	$Stick.disabled = false
+	pass

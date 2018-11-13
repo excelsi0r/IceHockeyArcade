@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://textures/hockey_no_background_white.png" type="Texture" id=1]
 [ext_resource path="res://textures/hockey_no_background.png" type="Texture" id=2]
@@ -8,13 +8,14 @@
 [ext_resource path="res://Disk.gd" type="Script" id=6]
 [ext_resource path="res://textures/disk.png" type="Texture" id=7]
 [ext_resource path="res://Left1.gd" type="Script" id=8]
-[ext_resource path="res://textures/stick.png" type="Texture" id=9]
-[ext_resource path="res://textures/player-red.png" type="Texture" id=10]
-[ext_resource path="res://Rigth1.gd" type="Script" id=11]
-[ext_resource path="res://textures/player-blue.png" type="Texture" id=12]
-[ext_resource path="res://KinematicBody2D.gd" type="Script" id=13]
-[ext_resource path="res://textures/goalkeeper-red.png" type="Texture" id=14]
-[ext_resource path="res://textures/goalkeeper-blue.png" type="Texture" id=15]
+[ext_resource path="res://StickMan.gd" type="Script" id=9]
+[ext_resource path="res://textures/stick.png" type="Texture" id=10]
+[ext_resource path="res://textures/player-red.png" type="Texture" id=11]
+[ext_resource path="res://Rigth1.gd" type="Script" id=12]
+[ext_resource path="res://textures/player-blue.png" type="Texture" id=13]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=14]
+[ext_resource path="res://textures/goalkeeper-red.png" type="Texture" id=15]
+[ext_resource path="res://textures/goalkeeper-blue.png" type="Texture" id=16]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -38,7 +39,7 @@ extents = Vector2( 15.0455, 13.9633 )
 [sub_resource type="SpriteFrames" id=4]
 
 animations = [ {
-"frames": [ ExtResource( 9 ) ],
+"frames": [ ExtResource( 10 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -47,7 +48,7 @@ animations = [ {
 [sub_resource type="SpriteFrames" id=5]
 
 animations = [ {
-"frames": [ ExtResource( 10 ) ],
+"frames": [ ExtResource( 11 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -56,7 +57,7 @@ animations = [ {
 [sub_resource type="SpriteFrames" id=6]
 
 animations = [ {
-"frames": [ ExtResource( 12 ) ],
+"frames": [ ExtResource( 13 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -65,7 +66,7 @@ animations = [ {
 [sub_resource type="SpriteFrames" id=7]
 
 animations = [ {
-"frames": [ ExtResource( 14 ) ],
+"frames": [ ExtResource( 15 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -79,7 +80,7 @@ extents = Vector2( 10.3103, 11.6589 )
 [sub_resource type="SpriteFrames" id=9]
 
 animations = [ {
-"frames": [ ExtResource( 15 ) ],
+"frames": [ ExtResource( 16 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -338,6 +339,7 @@ __meta__ = {
 
 [node name="Players" type="Node2D" parent="." index="4"]
 
+editor/display_folded = true
 position = Vector2( 510.803, 299.169 )
 __meta__ = {
 "_edit_lock_": true
@@ -345,26 +347,25 @@ __meta__ = {
 
 [node name="Left1" type="Node2D" parent="Players" index="0"]
 
-editor/display_folded = true
 position = Vector2( -293.382, -115.008 )
 script = ExtResource( 8 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="Stick" type="KinematicBody2D" parent="Players/Left1" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Players/Left1" index="0"]
 
-editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
 scale = Vector2( 0.476834, 0.280015 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+script = ExtResource( 9 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Stick" type="CollisionShape2D" parent="Players/Left1/Stick" index="0"]
+[node name="Stick" type="CollisionShape2D" parent="Players/Left1/StickMan" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
@@ -373,7 +374,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left1/Stick" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left1/StickMan" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
@@ -400,21 +401,21 @@ position = Vector2( -293.382, 118.787 )
 script = ExtResource( 8 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="Stick" type="KinematicBody2D" parent="Players/Left2" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Players/Left2" index="0"]
 
-editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
 scale = Vector2( 0.476834, 0.280015 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+script = ExtResource( 9 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left2/Stick" index="0"]
+[node name="Stick" type="CollisionShape2D" parent="Players/Left2/StickMan" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
@@ -423,7 +424,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left2/Stick" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left2/StickMan" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
@@ -450,21 +451,21 @@ position = Vector2( -102.8, -164.869 )
 script = ExtResource( 8 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="Stick" type="KinematicBody2D" parent="Players/Left3" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Players/Left3" index="0"]
 
-editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
 scale = Vector2( 0.476834, 0.280015 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+script = ExtResource( 9 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left3/Stick" index="0"]
+[node name="Stick" type="CollisionShape2D" parent="Players/Left3/StickMan" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
@@ -473,7 +474,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left3/Stick" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left3/StickMan" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
@@ -500,21 +501,21 @@ position = Vector2( -101.692, 164.217 )
 script = ExtResource( 8 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="Stick" type="KinematicBody2D" parent="Players/Left4" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Players/Left4" index="0"]
 
-editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
 scale = Vector2( 0.476834, 0.280015 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+script = ExtResource( 9 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left4/Stick" index="0"]
+[node name="Stick" type="CollisionShape2D" parent="Players/Left4/StickMan" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
@@ -523,7 +524,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left4/Stick" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left4/StickMan" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
@@ -550,21 +551,21 @@ position = Vector2( -64.019, -0.880188 )
 script = ExtResource( 8 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="Stick" type="KinematicBody2D" parent="Players/Left5" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Players/Left5" index="0"]
 
-editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
 scale = Vector2( 0.476834, 0.280015 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+script = ExtResource( 9 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left5/Stick" index="0"]
+[node name="Stick" type="CollisionShape2D" parent="Players/Left5/StickMan" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
@@ -573,7 +574,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left5/Stick" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left5/StickMan" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
@@ -597,24 +598,24 @@ __meta__ = {
 
 editor/display_folded = true
 position = Vector2( 291.66, -113.9 )
-script = ExtResource( 11 )
+script = ExtResource( 12 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="Stick" type="KinematicBody2D" parent="Players/Rigth1" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Players/Rigth1" index="0"]
 
-editor/display_folded = true
 position = Vector2( 39.0845, -0.191833 )
 scale = Vector2( 0.476834, 0.280015 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+script = ExtResource( 9 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth1/Stick" index="0"]
+[node name="Stick" type="CollisionShape2D" parent="Players/Rigth1/StickMan" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
@@ -623,7 +624,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth1/Stick" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth1/StickMan" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
@@ -647,24 +648,24 @@ __meta__ = {
 
 editor/display_folded = true
 position = Vector2( 290.333, 116.971 )
-script = ExtResource( 11 )
+script = ExtResource( 12 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="Stick" type="KinematicBody2D" parent="Players/Rigth2" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Players/Rigth2" index="0"]
 
-editor/display_folded = true
 position = Vector2( 39.0845, -0.191833 )
 scale = Vector2( 0.476834, 0.280015 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+script = ExtResource( 9 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth2/Stick" index="0"]
+[node name="Stick" type="CollisionShape2D" parent="Players/Rigth2/StickMan" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
@@ -673,7 +674,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth2/Stick" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth2/StickMan" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
@@ -697,24 +698,24 @@ __meta__ = {
 
 editor/display_folded = true
 position = Vector2( 96.3329, 163.971 )
-script = ExtResource( 11 )
+script = ExtResource( 12 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="Stick" type="KinematicBody2D" parent="Players/Rigth3" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Players/Rigth3" index="0"]
 
-editor/display_folded = true
 position = Vector2( 39.0845, -0.191833 )
 scale = Vector2( 0.476834, 0.280015 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+script = ExtResource( 9 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth3/Stick" index="0"]
+[node name="Stick" type="CollisionShape2D" parent="Players/Rigth3/StickMan" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
@@ -723,7 +724,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth3/Stick" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth3/StickMan" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
@@ -747,10 +748,10 @@ __meta__ = {
 
 editor/display_folded = true
 position = Vector2( 60.3329, -1.02927 )
-script = ExtResource( 11 )
+script = ExtResource( 12 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="Stick" type="KinematicBody2D" parent="Players/Rigth4" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Players/Rigth4" index="0"]
 
 editor/display_folded = true
 position = Vector2( 39.0845, -0.191833 )
@@ -759,12 +760,13 @@ input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
-_sections_unfolded = [ "Transform" ]
+script = ExtResource( 9 )
+_sections_unfolded = [ "Pause", "Transform" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth4/Stick" index="0"]
+[node name="Stick" type="CollisionShape2D" parent="Players/Rigth4/StickMan" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
@@ -773,7 +775,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth4/Stick" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth4/StickMan" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
@@ -797,24 +799,24 @@ __meta__ = {
 
 editor/display_folded = true
 position = Vector2( 96.3329, -164.029 )
-script = ExtResource( 11 )
+script = ExtResource( 12 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="Stick" type="KinematicBody2D" parent="Players/Rigth5" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Players/Rigth5" index="0"]
 
-editor/display_folded = true
 position = Vector2( 39.0845, -0.191833 )
 scale = Vector2( 0.476834, 0.280015 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+script = ExtResource( 9 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Rigth5/Stick" index="0"]
+[node name="Stick" type="CollisionShape2D" parent="Players/Rigth5/StickMan" index="0"]
 
 position = Vector2( -1.07324, -0.808533 )
 scale = Vector2( 2.10029, 2.33462 )
@@ -823,7 +825,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth5/Stick" index="1"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth5/StickMan" index="1"]
 
 position = Vector2( -1.4979, -0.986277 )
 scale = Vector2( 0.16054, 0.319544 )
@@ -848,21 +850,22 @@ __meta__ = {
 editor/display_folded = true
 position = Vector2( -345.595, 3.58621 )
 
-[node name="Stick" type="KinematicBody2D" parent="Players/GoalKeeperRed" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Players/GoalKeeperRed" index="0"]
 
+editor/display_folded = true
 position = Vector2( -2.22101, -2.05219 )
 scale = Vector2( 0.293992, 0.520579 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
-script = ExtResource( 13 )
+script = ExtResource( 14 )
 _sections_unfolded = [ "Collision", "collision" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/GoalKeeperRed/Stick" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/GoalKeeperRed/StickMan" index="0"]
 
 position = Vector2( -3.4879, -0.946372 )
 scale = Vector2( 0.325852, 0.214692 )
@@ -872,7 +875,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/GoalKeeperRed/Stick" index="1"]
+[node name="Stick" type="CollisionShape2D" parent="Players/GoalKeeperRed/StickMan" index="1"]
 
 position = Vector2( -4.5062, -0.371337 )
 scale = Vector2( 3.28966, 2.78533 )
@@ -886,7 +889,7 @@ __meta__ = {
 editor/display_folded = true
 position = Vector2( 356.549, 3.58621 )
 
-[node name="Stick" type="KinematicBody2D" parent="Players/GoalKeeperBlue" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Players/GoalKeeperBlue" index="0"]
 
 position = Vector2( -2.22101, -2.05219 )
 scale = Vector2( 0.293992, 0.520579 )
@@ -894,13 +897,13 @@ input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
-script = ExtResource( 13 )
+script = ExtResource( 14 )
 _sections_unfolded = [ "Collision", "collision" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/GoalKeeperBlue/Stick" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/GoalKeeperBlue/StickMan" index="0"]
 
 position = Vector2( -3.4879, -0.946372 )
 scale = Vector2( 0.325852, 0.214692 )
@@ -910,7 +913,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/GoalKeeperBlue/Stick" index="1"]
+[node name="Stick" type="CollisionShape2D" parent="Players/GoalKeeperBlue/StickMan" index="1"]
 
 position = Vector2( -4.5062, -0.371337 )
 scale = Vector2( 3.28966, 2.78533 )

@@ -25,9 +25,11 @@ func _process(delta):
 		curr_speed -= 5*delta
 	
 	var collision = move_and_collide(velocity)
-	
-	if collision != null && collision.collider.name == "Stick" && (Input.is_key_pressed(KEY_S) || Input.is_key_pressed(KEY_W) || Input.is_action_pressed("ui_up") || Input.is_action_pressed("ui_right")):
+	if collision != null && collision.collider.name == "StickMan" && (Input.is_key_pressed(KEY_S) || Input.is_key_pressed(KEY_W) || Input.is_action_pressed("ui_up") || Input.is_action_pressed("ui_right")):
 		curr_speed = MAX_SPEED
+		if collision.collider.has_method("hit"):
+			collision.collider.hit(0.3)
+		
 	
 	if collision:
 		velocity = velocity.bounce(collision.normal)
