@@ -1,0 +1,240 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://textures/hockey_no_background_white.png" type="Texture" id=1]
+[ext_resource path="res://textures/hockey_no_background.png" type="Texture" id=2]
+[ext_resource path="res://Disk.gd" type="Script" id=3]
+[ext_resource path="res://textures/disk.png" type="Texture" id=4]
+[ext_resource path="res://Left1.gd" type="Script" id=5]
+[ext_resource path="res://textures/stick.png" type="Texture" id=6]
+[ext_resource path="res://textures/player-red.png" type="Texture" id=7]
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=3]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 15.0455, 13.9633 )
+
+[sub_resource type="SpriteFrames" id=5]
+
+animations = [ {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=6]
+
+animations = [ {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="IceHockey" type="Node2D" index="0"]
+
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Field" type="StaticBody2D" parent="." index="0"]
+
+editor/display_folded = true
+position = Vector2( 506.737, 303.105 )
+scale = Vector2( 14.3179, 7.23684 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Background" type="TextureRect" parent="Field" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -32.8792
+margin_top = -41.9167
+margin_right = 33.1208
+margin_bottom = 39.0833
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ring" type="CollisionPolygon2D" parent="Field" index="1"]
+
+position = Vector2( -36.0845, -43.1606 )
+scale = Vector2( 0.0698428, 0.138182 )
+build_mode = 0
+polygon = PoolVector2Array( 510.892, 65.2949, 153, 66.9999, 106, 78.9999, 66.9999, 110, 50.9999, 152, 46.9999, 447, 61.9999, 498, 84.9999, 525, 121.915, 549.035, 153, 553, 873, 554, 920, 545, 954, 520, 976, 484, 988, 445, 990.12, 174.497, 969.362, 114.932, 937.775, 83.3449, 879.112, 65.2949, 511, 64.9999, 512.022, 80.8739, 880.015, 78.8324, 929.652, 94.1749, 962.142, 129.372, 975.68, 173.595, 972.972, 445.247, 965, 481, 947, 511, 913, 536, 872, 544, 154, 542, 121.012, 534.595, 93.9374, 517.447, 72.9999, 491, 58.9999, 452, 60.9999, 158, 79.9999, 118, 111, 89.9999, 153.888, 80.2972, 511.795, 79.7349 )
+_sections_unfolded = [ "Material" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Field2" type="StaticBody2D" parent="." index="1"]
+
+position = Vector2( 506.737, 303.105 )
+scale = Vector2( 14.3179, 7.23684 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Background" type="TextureRect" parent="Field2" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -32.8792
+margin_top = -41.9167
+margin_right = 33.1208
+margin_bottom = 39.0833
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ring" type="CollisionPolygon2D" parent="Field2" index="1"]
+
+position = Vector2( -36.0845, -43.1606 )
+scale = Vector2( 0.0698428, 0.138182 )
+build_mode = 0
+polygon = PoolVector2Array( 510.892, 65.2949, 153, 66.9999, 106, 78.9999, 66.9999, 110, 50.9999, 152, 46.9999, 447, 61.9999, 498, 84.9999, 525, 121.915, 549.035, 153, 553, 873, 554, 920, 545, 954, 520, 976, 484, 988, 445, 990.12, 174.497, 969.362, 114.932, 937.775, 83.3449, 879.112, 65.2949, 511, 64.9999, 512.022, 80.8739, 880.015, 78.8324, 929.652, 94.1749, 962.142, 129.372, 975.68, 173.595, 972.972, 445.247, 965, 481, 947, 511, 913, 536, 872, 544, 154, 542, 121.012, 534.595, 93.9374, 517.447, 72.9999, 491, 58.9999, 452, 60.9999, 158, 79.9999, 118, 111, 89.9999, 153.888, 80.2972, 511.795, 79.7349 )
+_sections_unfolded = [ "Material" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Disk" type="KinematicBody2D" parent="." index="2"]
+
+editor/display_folded = true
+position = Vector2( 508.507, 295.193 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="DiskSprite" type="AnimatedSprite" parent="Disk" index="0"]
+
+position = Vector2( 2.11377, 3.38242 )
+scale = Vector2( 0.0664821, 0.0657851 )
+frames = SubResource( 2 )
+animation = "default"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="DiskCollision" type="CollisionShape2D" parent="Disk" index="1"]
+
+position = Vector2( 2.26477, 3.23532 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Players" type="Node2D" parent="." index="3"]
+
+position = Vector2( 510.803, 299.169 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Left1" type="Node2D" parent="Players" index="0"]
+
+position = Vector2( -293.382, -115.008 )
+script = ExtResource( 5 )
+_sections_unfolded = [ "Pause" ]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="Players/Left1" index="0"]
+
+editor/display_folded = true
+position = Vector2( -37.8722, -0.191833 )
+scale = Vector2( 0.476834, 0.280015 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Players/Left1/KinematicBody2D" index="0"]
+
+position = Vector2( -1.07324, -0.808533 )
+scale = Vector2( 2.10029, 2.33462 )
+shape = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left1/KinematicBody2D" index="1"]
+
+position = Vector2( -1.4979, -0.986277 )
+scale = Vector2( 0.16054, 0.319544 )
+frames = SubResource( 5 )
+animation = "default"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left1" index="1"]
+
+scale = Vector2( 0.167442, 0.168367 )
+frames = SubResource( 6 )
+animation = "default"
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+
