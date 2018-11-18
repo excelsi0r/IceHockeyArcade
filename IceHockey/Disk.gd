@@ -34,7 +34,7 @@ func _process(delta):
 	if collision:
 		velocity = velocity.bounce(collision.normal)
 		
-	velocity = calculate_velocity(velocity.angle(), curr_speed)
+		velocity = calculate_velocity(velocity.angle(), curr_speed)
 		
 	pass
 	
