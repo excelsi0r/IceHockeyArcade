@@ -53,10 +53,8 @@ func _process(delta):
 		countdown -= delta
 	elif countdown <= 0 && playing:
 		str("Gameover")
+		playing = false
 		
-		
-		
-	
 	pass
 
 func redScore():
@@ -91,9 +89,12 @@ func format_time(time):
     
 	var string = ""
 	
-	var minutes = time / 60
-	var seconds = 0
+	var minutes = int(time / 60)
+	var seconds = int(time - (minutes * 60))
 	
-	string = str(minutes, ":", seconds)
+	if seconds < 10:
+		string = str("0", minutes, ":0", seconds)
+	else:
+		string = str("0", minutes, ":", seconds)
 	return string
 	

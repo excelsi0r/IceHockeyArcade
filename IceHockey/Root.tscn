@@ -360,6 +360,7 @@ __meta__ = {
 
 [node name="Disk" type="KinematicBody2D" parent="." index="3"]
 
+editor/display_folded = true
 position = Vector2( 508.507, 295.193 )
 input_pickable = false
 collision_layer = 1
@@ -978,7 +979,8 @@ __meta__ = {
 
 [node name="GoalKeeperRed" type="Node2D" parent="Players" index="8"]
 
-position = Vector2( -345.595, 3.58621 )
+editor/display_folded = true
+position = Vector2( -358.627, 6.02975 )
 
 [node name="StickManGoal" type="KinematicBody2D" parent="Players/GoalKeeperRed" index="0"]
 
@@ -1015,10 +1017,12 @@ __meta__ = {
 
 [node name="GoalKeeperGoal" type="Node2D" parent="Players" index="9"]
 
-position = Vector2( 356.549, 3.58621 )
+editor/display_folded = true
+position = Vector2( 358.993, 3.58621 )
 
 [node name="StickManGoal" type="KinematicBody2D" parent="Players/GoalKeeperGoal" index="0"]
 
+editor/display_folded = true
 position = Vector2( -2.22101, -2.05219 )
 scale = Vector2( 0.293992, 0.520579 )
 input_pickable = false
@@ -1052,6 +1056,7 @@ __meta__ = {
 
 [node name="GUI" type="Control" parent="." index="5"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1105,10 +1110,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 39.0
-margin_top = -1.0
-margin_right = 84.0
-margin_bottom = 31.0
+margin_left = 36.0
+margin_right = 81.0
+margin_bottom = 32.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -1146,10 +1150,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 32.0
-margin_top = -1.0
-margin_right = 92.0
-margin_bottom = 31.0
+margin_left = 30.0
+margin_right = 90.0
+margin_bottom = 32.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -1187,9 +1190,8 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 52.0
-margin_top = -4.0
 margin_right = 67.0
-margin_bottom = 28.0
+margin_bottom = 32.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -1228,10 +1230,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 49.0
-margin_top = -5.0
-margin_right = 64.0
-margin_bottom = 27.0
+margin_left = 50.0
+margin_right = 65.0
+margin_bottom = 32.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -1252,10 +1253,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 124.0
-margin_top = 8.0
-margin_right = 262.0
-margin_bottom = 48.0
+margin_left = 87.0
+margin_top = 9.0
+margin_right = 225.0
+margin_bottom = 49.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -1270,9 +1271,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -2.0
+margin_left = 35.0
 margin_top = 4.0
-margin_right = 65.0
+margin_right = 102.0
 margin_bottom = 36.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -1287,6 +1288,9 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="GoalInfo" type="Panel" parent="GUI" index="1"]
 
@@ -1311,7 +1315,7 @@ position = Vector2( 123.123, 100.781 )
 scale = Vector2( 0.472318, 0.521402 )
 frames = SubResource( 12 )
 animation = "New Anim"
-frame = 5
+frame = 7
 playing = true
 __meta__ = {
 "_edit_lock_": true

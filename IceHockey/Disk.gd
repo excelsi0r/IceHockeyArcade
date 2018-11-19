@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 const INIT_SPEED = 2
-const MAX_SPEED = 5
+const MAX_SPEED = 6
 var curr_speed
 
 var velocity = Vector2()
