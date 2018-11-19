@@ -4,19 +4,26 @@ var curr
 const INCREMENT = 50
 const MAX_UP = -INCREMENT
 const MAX_DN = INCREMENT
+const mov_speed_inc = 2
+
+var root
 
 func _ready():
 	curr = 0
+	root = get_tree().get_root().get_node("IceHockey")
 	pass
 
 func _process(delta):
 	
+	if !root.playing:
+		return
+	
 	if Input.is_action_pressed("ui_up") && curr >= MAX_UP:
-		move_local_y(-1)
-		curr -= 1
+		move_local_y(-mov_speed_inc)
+		curr -= mov_speed_inc
 	elif Input.is_action_pressed("ui_down") && curr <= MAX_DN:
-		move_local_y(1)
-		curr += 1
+		move_local_y(mov_speed_inc)
+		curr += mov_speed_inc
 
 	pass
 

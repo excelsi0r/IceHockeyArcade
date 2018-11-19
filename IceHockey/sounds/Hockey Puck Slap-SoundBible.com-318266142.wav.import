@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Hockey Puck Slap-SoundBible.com-318266142.wav-e97fa0f2e00fcc052776db20a2a9f119.sample"
+
+[deps]
+
+source_file="res://sounds/Hockey Puck Slap-SoundBible.com-318266142.wav"
+dest_files=[ "res://.import/Hockey Puck Slap-SoundBible.com-318266142.wav-e97fa0f2e00fcc052776db20a2a9f119.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
