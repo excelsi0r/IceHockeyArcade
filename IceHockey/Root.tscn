@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=2]
+[gd_scene load_steps=78 format=2]
 
 [ext_resource path="res://Root.gd" type="Script" id=1]
 [ext_resource path="res://textures/hockey_no_background_white.png" type="Texture" id=2]
@@ -20,24 +20,47 @@
 [ext_resource path="res://textures/goalkeeper-red.png" type="Texture" id=18]
 [ext_resource path="res://textures/goalkeeper-blue.png" type="Texture" id=19]
 [ext_resource path="res://digital.tres" type="DynamicFont" id=20]
-[ext_resource path="res://anims/goal/output-onlinepngtools.png" type="Texture" id=21]
-[ext_resource path="res://anims/goal/output-onlinepngtools (1).png" type="Texture" id=22]
-[ext_resource path="res://anims/goal/output-onlinepngtools (2).png" type="Texture" id=23]
-[ext_resource path="res://anims/goal/output-onlinepngtools (3).png" type="Texture" id=24]
-[ext_resource path="res://anims/goal/output-onlinepngtools (4).png" type="Texture" id=25]
-[ext_resource path="res://anims/goal/output-onlinepngtools (5).png" type="Texture" id=26]
-[ext_resource path="res://anims/goal/output-onlinepngtools (6).png" type="Texture" id=27]
-[ext_resource path="res://anims/goal/output-onlinepngtools (7).png" type="Texture" id=28]
-[ext_resource path="res://anims/goal/output-onlinepngtools (8).png" type="Texture" id=29]
-[ext_resource path="res://anims/goal/output-onlinepngtools (9).png" type="Texture" id=30]
-[ext_resource path="res://anims/goal/output-onlinepngtools (10).png" type="Texture" id=31]
-[ext_resource path="res://anims/goal/output-onlinepngtools (11).png" type="Texture" id=32]
-[ext_resource path="res://sounds/hockey-arena-organ-song-10_cutted.wav" type="AudioStream" id=33]
-[ext_resource path="res://sounds/Sports_Crowd-GoGo-2100314571.wav" type="AudioStream" id=34]
-[ext_resource path="res://sounds/3766.wav" type="AudioStream" id=35]
-[ext_resource path="res://sounds/22373.wav" type="AudioStream" id=36]
-[ext_resource path="res://sounds/cheer2.wav" type="AudioStream" id=37]
-[ext_resource path="res://sounds/Putter Golf Ball-SoundBible.com-1207317863.wav" type="AudioStream" id=38]
+[ext_resource path="res://anims/snow/output-onlinepngtools (0).png" type="Texture" id=21]
+[ext_resource path="res://anims/snow/output-onlinepngtools (1).png" type="Texture" id=22]
+[ext_resource path="res://anims/snow/output-onlinepngtools (2).png" type="Texture" id=23]
+[ext_resource path="res://anims/snow/output-onlinepngtools (3).png" type="Texture" id=24]
+[ext_resource path="res://anims/snow/output-onlinepngtools (4).png" type="Texture" id=25]
+[ext_resource path="res://anims/snow/output-onlinepngtools (5).png" type="Texture" id=26]
+[ext_resource path="res://anims/snow/output-onlinepngtools (6).png" type="Texture" id=27]
+[ext_resource path="res://anims/snow/output-onlinepngtools (7).png" type="Texture" id=28]
+[ext_resource path="res://anims/snow/output-onlinepngtools (8).png" type="Texture" id=29]
+[ext_resource path="res://anims/snow/output-onlinepngtools (9).png" type="Texture" id=30]
+[ext_resource path="res://anims/snow/output-onlinepngtools (10).png" type="Texture" id=31]
+[ext_resource path="res://anims/snow/output-onlinepngtools (11).png" type="Texture" id=32]
+[ext_resource path="res://anims/snow/output-onlinepngtools (12).png" type="Texture" id=33]
+[ext_resource path="res://anims/snow/output-onlinepngtools (13).png" type="Texture" id=34]
+[ext_resource path="res://anims/snow/output-onlinepngtools (14).png" type="Texture" id=35]
+[ext_resource path="res://anims/snow/output-onlinepngtools (15).png" type="Texture" id=36]
+[ext_resource path="res://anims/snow/output-onlinepngtools (16).png" type="Texture" id=37]
+[ext_resource path="res://anims/snow/output-onlinepngtools (17).png" type="Texture" id=38]
+[ext_resource path="res://anims/snow/output-onlinepngtools (18).png" type="Texture" id=39]
+[ext_resource path="res://anims/snow/output-onlinepngtools (19).png" type="Texture" id=40]
+[ext_resource path="res://textures/coollogo_com-12027292.png" type="Texture" id=41]
+[ext_resource path="res://anims/goal/output-onlinepngtools.png" type="Texture" id=42]
+[ext_resource path="res://anims/goal/output-onlinepngtools (1).png" type="Texture" id=43]
+[ext_resource path="res://anims/goal/output-onlinepngtools (2).png" type="Texture" id=44]
+[ext_resource path="res://anims/goal/output-onlinepngtools (3).png" type="Texture" id=45]
+[ext_resource path="res://anims/goal/output-onlinepngtools (4).png" type="Texture" id=46]
+[ext_resource path="res://anims/goal/output-onlinepngtools (5).png" type="Texture" id=47]
+[ext_resource path="res://anims/goal/output-onlinepngtools (6).png" type="Texture" id=48]
+[ext_resource path="res://anims/goal/output-onlinepngtools (7).png" type="Texture" id=49]
+[ext_resource path="res://anims/goal/output-onlinepngtools (8).png" type="Texture" id=50]
+[ext_resource path="res://anims/goal/output-onlinepngtools (9).png" type="Texture" id=51]
+[ext_resource path="res://anims/goal/output-onlinepngtools (10).png" type="Texture" id=52]
+[ext_resource path="res://anims/goal/output-onlinepngtools (11).png" type="Texture" id=53]
+[ext_resource path="res://textures/coollogo_com-26350116.png" type="Texture" id=54]
+[ext_resource path="res://textures/coollogo_com-1286292.png" type="Texture" id=55]
+[ext_resource path="res://sounds/hockey-arena-organ-song-10_cutted.wav" type="AudioStream" id=56]
+[ext_resource path="res://sounds/Sports_Crowd-GoGo-2100314571.wav" type="AudioStream" id=57]
+[ext_resource path="res://sounds/3766.wav" type="AudioStream" id=58]
+[ext_resource path="res://sounds/22373.wav" type="AudioStream" id=59]
+[ext_resource path="res://sounds/cheer2.wav" type="AudioStream" id=60]
+[ext_resource path="res://sounds/Putter Golf Ball-SoundBible.com-1207317863.wav" type="AudioStream" id=61]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -122,14 +145,108 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="StyleBoxFlat" id=13]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0, 0.690196, 0.905882, 1 )
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0, 0, 0, 1 )
+border_blend = false
+corner_radius_top_left = 0
+corner_radius_top_right = 0
+corner_radius_bottom_right = 0
+corner_radius_bottom_left = 0
+corner_detail = 8
+expand_margin_left = 0.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
+_sections_unfolded = [ "Border" ]
+
+[sub_resource type="SpriteFrames" id=14]
+
+animations = [ {
+"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
 [sub_resource type="SpriteFrames" id=12]
 
 animations = [ {
-"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ) ],
+"frames": [ ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ) ],
 "loop": true,
 "name": "New Anim",
 "speed": 5.0
 } ]
+
+[sub_resource type="StyleBoxFlat" id=15]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0, 0.690196, 0.905882, 1 )
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_blend = false
+corner_radius_top_left = 0
+corner_radius_top_right = 0
+corner_radius_bottom_right = 0
+corner_radius_bottom_left = 0
+corner_detail = 8
+expand_margin_left = 0.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
+
+[sub_resource type="StyleBoxFlat" id=16]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0, 0.693848, 0.90625, 1 )
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_blend = false
+corner_radius_top_left = 0
+corner_radius_top_right = 0
+corner_radius_bottom_right = 0
+corner_radius_bottom_left = 0
+corner_detail = 8
+expand_margin_left = 0.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
 
 [node name="IceHockey" type="Node2D" index="0"]
 
@@ -138,7 +255,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Field" type="StaticBody2D" parent="." index="0"]
+[node name="Game" type="Node2D" parent="." index="0"]
+
+[node name="Field" type="StaticBody2D" parent="Game" index="0"]
 
 editor/display_folded = true
 position = Vector2( 506.737, 303.105 )
@@ -154,7 +273,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Background" type="TextureRect" parent="Field" index="0"]
+[node name="Background" type="TextureRect" parent="Game/Field" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -177,7 +296,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Background2" type="TextureRect" parent="Field" index="1"]
+[node name="Background2" type="TextureRect" parent="Game/Field" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -200,7 +319,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Ring" type="CollisionPolygon2D" parent="Field" index="2"]
+[node name="Ring" type="CollisionPolygon2D" parent="Game/Field" index="2"]
 
 position = Vector2( -36.0845, -43.1606 )
 scale = Vector2( 0.0698428, 0.138182 )
@@ -211,12 +330,12 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="RedGoal" type="Node2D" parent="." index="1"]
+[node name="RedGoal" type="Node2D" parent="Game" index="1"]
 
 editor/display_folded = true
 position = Vector2( 119, 302.216 )
 
-[node name="GoalTexture" type="TextureRect" parent="RedGoal" index="0"]
+[node name="GoalTexture" type="TextureRect" parent="Game/RedGoal" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -240,7 +359,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="GoalArea" type="Area2D" parent="RedGoal" index="1"]
+[node name="GoalArea" type="Area2D" parent="Game/RedGoal" index="1"]
 
 editor/display_folded = true
 input_pickable = true
@@ -255,7 +374,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="GoalCollisiondetect" type="CollisionPolygon2D" parent="RedGoal/GoalArea" index="0"]
+[node name="GoalCollisiondetect" type="CollisionPolygon2D" parent="Game/RedGoal/GoalArea" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( -13.4966, -78.0294, -23.8497, -78.6764, -30.3203, -64.4409, -31.291, 70.1495, -23.2026, 79.8555, -13.4966, 81.1497 )
@@ -263,7 +382,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="GoalPhysic" type="StaticBody2D" parent="RedGoal" index="2"]
+[node name="GoalPhysic" type="StaticBody2D" parent="Game/RedGoal" index="2"]
 
 editor/display_folded = true
 input_pickable = false
@@ -277,7 +396,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="GoalWall" type="CollisionPolygon2D" parent="RedGoal/GoalPhysic" index="0"]
+[node name="GoalWall" type="CollisionPolygon2D" parent="Game/RedGoal/GoalPhysic" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( -9.34647, -83.6124, -23.854, -83.3745, -34.3184, -65.5375, -35.0612, 71.2369, -22.6112, 86.1517, -10.7528, 86.6788, -10.2257, 80.8813, -23.1383, 79.3002, -31.3074, 69.5499, -31.1904, -63.831, -23.854, -78.618, -9.10864, -78.618 )
@@ -285,13 +404,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="BlueGoal" type="Node2D" parent="." index="2"]
+[node name="BlueGoal" type="Node2D" parent="Game" index="2"]
 
 editor/display_folded = true
 position = Vector2( 896.7, 307.095 )
 rotation = -3.14068
 
-[node name="GoalTexture" type="TextureRect" parent="BlueGoal" index="0"]
+[node name="GoalTexture" type="TextureRect" parent="Game/BlueGoal" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -315,7 +434,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="GoalArea" type="Area2D" parent="BlueGoal" index="1"]
+[node name="GoalArea" type="Area2D" parent="Game/BlueGoal" index="1"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -329,7 +448,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="GoalCollisiondetect" type="CollisionPolygon2D" parent="BlueGoal/GoalArea" index="0"]
+[node name="GoalCollisiondetect" type="CollisionPolygon2D" parent="Game/BlueGoal/GoalArea" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( -13.1749, -80.0586, -23.4517, -79.5222, -30.8185, -66.6029, -31.7456, 72.5371, -21.7225, 82.8053, -13.5495, 87.0142 )
@@ -337,7 +456,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="GoalPhysic" type="StaticBody2D" parent="BlueGoal" index="2"]
+[node name="GoalPhysic" type="StaticBody2D" parent="Game/BlueGoal" index="2"]
 
 input_pickable = false
 collision_layer = 1
@@ -350,7 +469,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="GoalWall" type="CollisionPolygon2D" parent="BlueGoal/GoalPhysic" index="0"]
+[node name="GoalWall" type="CollisionPolygon2D" parent="Game/BlueGoal/GoalPhysic" index="0"]
 
 build_mode = 0
 polygon = PoolVector2Array( -9.2276, -86.1232, -24.7747, -85.3184, -34.0571, -71.091, -34.3774, 76.2288, -21.9786, 90.9747, -8.27472, 91.7527, -8.80707, 85.9557, -23.0401, 82.8065, -32.0094, 72.2738, -30.4789, -67.5194, -22.3979, -79.7866, -8.69556, -80.5897 )
@@ -358,7 +477,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Disk" type="KinematicBody2D" parent="." index="3"]
+[node name="Disk" type="KinematicBody2D" parent="Game" index="3"]
 
 editor/display_folded = true
 position = Vector2( 508.507, 295.193 )
@@ -371,7 +490,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="DiskSprite" type="AnimatedSprite" parent="Disk" index="0"]
+[node name="DiskSprite" type="AnimatedSprite" parent="Game/Disk" index="0"]
 
 position = Vector2( 2.11377, 3.38242 )
 scale = Vector2( 0.0664821, 0.0657851 )
@@ -381,7 +500,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="DiskCollision" type="CollisionShape2D" parent="Disk" index="1"]
+[node name="DiskCollision" type="CollisionShape2D" parent="Game/Disk" index="1"]
 
 position = Vector2( 2.26477, 3.23532 )
 shape = SubResource( 2 )
@@ -389,20 +508,21 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Players" type="Node2D" parent="." index="4"]
+[node name="Players" type="Node2D" parent="Game" index="4"]
 
+editor/display_folded = true
 position = Vector2( 510.803, 299.169 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Left1" type="Node2D" parent="Players" index="0"]
+[node name="Left1" type="Node2D" parent="Game/Players" index="0"]
 
 position = Vector2( -295.187, -115.008 )
 script = ExtResource( 10 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="StickMan" type="KinematicBody2D" parent="Players/Left1" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Game/Players/Left1" index="0"]
 
 editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
@@ -417,7 +537,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left1/StickMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Left1/StickMan" index="0"]
 
 position = Vector2( -6.95743, -0.746627 )
 rotation = -1.57341
@@ -428,7 +548,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Stick" type="CollisionShape2D" parent="Players/Left1/StickMan" index="1"]
+[node name="Stick" type="CollisionShape2D" parent="Game/Players/Left1/StickMan" index="1"]
 
 position = Vector2( -60.5595, 1.2332 )
 rotation = -1.5823
@@ -439,7 +559,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerMan" type="KinematicBody2D" parent="Players/Left1" index="1"]
+[node name="PlayerMan" type="KinematicBody2D" parent="Game/Players/Left1" index="1"]
 
 input_pickable = false
 collision_layer = 1
@@ -449,7 +569,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left1/PlayerMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Left1/PlayerMan" index="0"]
 
 scale = Vector2( 0.124047, 0.124418 )
 frames = SubResource( 5 )
@@ -459,7 +579,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerCollision" type="CollisionPolygon2D" parent="Players/Left1/PlayerMan" index="1"]
+[node name="PlayerCollision" type="CollisionPolygon2D" parent="Game/Players/Left1/PlayerMan" index="1"]
 
 build_mode = 0
 polygon = PoolVector2Array( -8.40726, -16.9117, 6.82913, -17.3389, 16.6545, -7.79834, 16.7969, 8.43481, 7.25632, 16.8362, -7.69528, 16.5514, -17.0934, 7.29565, -16.6662, -8.51033 )
@@ -467,14 +587,14 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Left2" type="Node2D" parent="Players" index="1"]
+[node name="Left2" type="Node2D" parent="Game/Players" index="1"]
 
 editor/display_folded = true
 position = Vector2( -295.187, 118.74 )
 script = ExtResource( 10 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="StickMan" type="KinematicBody2D" parent="Players/Left2" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Game/Players/Left2" index="0"]
 
 editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
@@ -489,7 +609,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left2/StickMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Left2/StickMan" index="0"]
 
 position = Vector2( -6.95743, -0.746627 )
 rotation = -1.57341
@@ -500,7 +620,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Stick" type="CollisionShape2D" parent="Players/Left2/StickMan" index="1"]
+[node name="Stick" type="CollisionShape2D" parent="Game/Players/Left2/StickMan" index="1"]
 
 position = Vector2( -60.5595, 1.2332 )
 rotation = -1.5823
@@ -511,7 +631,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerMan" type="KinematicBody2D" parent="Players/Left2" index="1"]
+[node name="PlayerMan" type="KinematicBody2D" parent="Game/Players/Left2" index="1"]
 
 editor/display_folded = true
 input_pickable = false
@@ -522,7 +642,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite2" type="AnimatedSprite" parent="Players/Left2/PlayerMan" index="0"]
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="Game/Players/Left2/PlayerMan" index="0"]
 
 scale = Vector2( 0.124047, 0.124418 )
 frames = SubResource( 5 )
@@ -532,7 +652,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerCollision" type="CollisionPolygon2D" parent="Players/Left2/PlayerMan" index="1"]
+[node name="PlayerCollision" type="CollisionPolygon2D" parent="Game/Players/Left2/PlayerMan" index="1"]
 
 build_mode = 0
 polygon = PoolVector2Array( -8.40726, -16.9117, 6.82913, -17.3389, 16.6545, -7.79834, 16.7969, 8.43481, 7.25632, 16.8362, -7.69528, 16.5514, -17.0934, 7.29565, -16.6662, -8.51033 )
@@ -541,14 +661,14 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Left4" type="Node2D" parent="Players" index="2"]
+[node name="Left4" type="Node2D" parent="Game/Players" index="2"]
 
 editor/display_folded = true
 position = Vector2( 105.582, 86.7972 )
 script = ExtResource( 10 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="StickMan" type="KinematicBody2D" parent="Players/Left4" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Game/Players/Left4" index="0"]
 
 editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
@@ -563,7 +683,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left4/StickMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Left4/StickMan" index="0"]
 
 position = Vector2( -6.95743, -0.746627 )
 rotation = -1.57341
@@ -574,7 +694,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Stick" type="CollisionShape2D" parent="Players/Left4/StickMan" index="1"]
+[node name="Stick" type="CollisionShape2D" parent="Game/Players/Left4/StickMan" index="1"]
 
 position = Vector2( -60.5595, 1.2332 )
 rotation = -1.5823
@@ -585,7 +705,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerMan" type="KinematicBody2D" parent="Players/Left4" index="1"]
+[node name="PlayerMan" type="KinematicBody2D" parent="Game/Players/Left4" index="1"]
 
 input_pickable = false
 collision_layer = 1
@@ -595,7 +715,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left4/PlayerMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Left4/PlayerMan" index="0"]
 
 scale = Vector2( 0.124047, 0.124418 )
 frames = SubResource( 6 )
@@ -605,7 +725,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerCollision" type="CollisionPolygon2D" parent="Players/Left4/PlayerMan" index="1"]
+[node name="PlayerCollision" type="CollisionPolygon2D" parent="Game/Players/Left4/PlayerMan" index="1"]
 
 build_mode = 0
 polygon = PoolVector2Array( -8.40726, -16.9117, 6.82913, -17.3389, 16.6545, -7.79834, 16.7969, 8.43481, 7.25632, 16.8362, -7.69528, 16.5514, -17.0934, 7.29565, -16.6662, -8.51033 )
@@ -613,14 +733,14 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Left5" type="Node2D" parent="Players" index="3"]
+[node name="Left5" type="Node2D" parent="Game/Players" index="3"]
 
 editor/display_folded = true
 position = Vector2( 104.163, -85.234 )
 script = ExtResource( 10 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="StickMan" type="KinematicBody2D" parent="Players/Left5" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Game/Players/Left5" index="0"]
 
 editor/display_folded = true
 position = Vector2( -37.8722, -0.191833 )
@@ -635,7 +755,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left5/StickMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Left5/StickMan" index="0"]
 
 position = Vector2( -6.95743, -0.746627 )
 rotation = -1.57341
@@ -646,7 +766,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Stick" type="CollisionShape2D" parent="Players/Left5/StickMan" index="1"]
+[node name="Stick" type="CollisionShape2D" parent="Game/Players/Left5/StickMan" index="1"]
 
 position = Vector2( -60.5595, 1.2332 )
 rotation = -1.5823
@@ -657,7 +777,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerMan" type="KinematicBody2D" parent="Players/Left5" index="1"]
+[node name="PlayerMan" type="KinematicBody2D" parent="Game/Players/Left5" index="1"]
 
 editor/display_folded = true
 input_pickable = false
@@ -668,7 +788,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Left5/PlayerMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Left5/PlayerMan" index="0"]
 
 scale = Vector2( 0.124047, 0.124418 )
 frames = SubResource( 6 )
@@ -678,7 +798,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerCollision" type="CollisionPolygon2D" parent="Players/Left5/PlayerMan" index="1"]
+[node name="PlayerCollision" type="CollisionPolygon2D" parent="Game/Players/Left5/PlayerMan" index="1"]
 
 build_mode = 0
 polygon = PoolVector2Array( -8.40726, -16.9117, 6.82913, -17.3389, 16.6545, -7.79834, 16.7969, 8.43481, 7.25632, 16.8362, -7.69528, 16.5514, -17.0934, 7.29565, -16.6662, -8.51033 )
@@ -686,14 +806,14 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Rigth1" type="Node2D" parent="Players" index="4"]
+[node name="Rigth1" type="Node2D" parent="Game/Players" index="4"]
 
 editor/display_folded = true
 position = Vector2( 291.66, -113.9 )
 script = ExtResource( 15 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="StickMan" type="KinematicBody2D" parent="Players/Rigth1" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Game/Players/Rigth1" index="0"]
 
 editor/display_folded = true
 position = Vector2( 39.0845, -0.191833 )
@@ -708,7 +828,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth1/StickMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Rigth1/StickMan" index="0"]
 
 position = Vector2( 4.73881, 0.486043 )
 rotation = 1.58218
@@ -719,7 +839,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Stick" type="CollisionShape2D" parent="Players/Rigth1/StickMan" index="1"]
+[node name="Stick" type="CollisionShape2D" parent="Game/Players/Rigth1/StickMan" index="1"]
 
 position = Vector2( -15.2145, 1.62357 )
 rotation = 1.56594
@@ -729,7 +849,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerMan" type="KinematicBody2D" parent="Players/Rigth1" index="1"]
+[node name="PlayerMan" type="KinematicBody2D" parent="Game/Players/Rigth1" index="1"]
 
 editor/display_folded = true
 input_pickable = false
@@ -741,7 +861,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth1/PlayerMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Rigth1/PlayerMan" index="0"]
 
 scale = Vector2( 0.124047, 0.124418 )
 frames = SubResource( 8 )
@@ -751,7 +871,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerCollision" type="CollisionPolygon2D" parent="Players/Rigth1/PlayerMan" index="1"]
+[node name="PlayerCollision" type="CollisionPolygon2D" parent="Game/Players/Rigth1/PlayerMan" index="1"]
 
 build_mode = 0
 polygon = PoolVector2Array( -8.40726, -16.9117, 6.82913, -17.3389, 16.6545, -7.79834, 16.7969, 8.43481, 7.25632, 16.8362, -7.69528, 16.5514, -17.0934, 7.29565, -16.6662, -8.51033 )
@@ -759,14 +879,14 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Rigth2" type="Node2D" parent="Players" index="5"]
+[node name="Rigth2" type="Node2D" parent="Game/Players" index="5"]
 
 editor/display_folded = true
 position = Vector2( 290.925, 119.125 )
 script = ExtResource( 15 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="StickMan" type="KinematicBody2D" parent="Players/Rigth2" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Game/Players/Rigth2" index="0"]
 
 editor/display_folded = true
 position = Vector2( 39.0845, -0.191833 )
@@ -781,7 +901,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth2/StickMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Rigth2/StickMan" index="0"]
 
 position = Vector2( 4.73881, 0.486043 )
 rotation = 1.58218
@@ -792,7 +912,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Stick" type="CollisionShape2D" parent="Players/Rigth2/StickMan" index="1"]
+[node name="Stick" type="CollisionShape2D" parent="Game/Players/Rigth2/StickMan" index="1"]
 
 position = Vector2( -15.2145, 1.62357 )
 rotation = 1.56594
@@ -802,7 +922,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerMan" type="KinematicBody2D" parent="Players/Rigth2" index="1"]
+[node name="PlayerMan" type="KinematicBody2D" parent="Game/Players/Rigth2" index="1"]
 
 editor/display_folded = true
 input_pickable = false
@@ -814,7 +934,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth2/PlayerMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Rigth2/PlayerMan" index="0"]
 
 scale = Vector2( 0.124047, 0.124418 )
 frames = SubResource( 8 )
@@ -824,7 +944,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerCollision" type="CollisionPolygon2D" parent="Players/Rigth2/PlayerMan" index="1"]
+[node name="PlayerCollision" type="CollisionPolygon2D" parent="Game/Players/Rigth2/PlayerMan" index="1"]
 
 build_mode = 0
 polygon = PoolVector2Array( -8.40726, -16.9117, 6.82913, -17.3389, 16.6545, -7.79834, 16.7969, 8.43481, 7.25632, 16.8362, -7.69528, 16.5514, -17.0934, 7.29565, -16.6662, -8.51033 )
@@ -832,14 +952,14 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Rigth4" type="Node2D" parent="Players" index="6"]
+[node name="Rigth4" type="Node2D" parent="Game/Players" index="6"]
 
 editor/display_folded = true
 position = Vector2( -101.85, 75.7812 )
 script = ExtResource( 15 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="StickMan" type="KinematicBody2D" parent="Players/Rigth4" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Game/Players/Rigth4" index="0"]
 
 position = Vector2( 39.0845, -0.191833 )
 scale = Vector2( 0.476834, 0.280015 )
@@ -853,7 +973,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth4/StickMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Rigth4/StickMan" index="0"]
 
 position = Vector2( 4.73881, 0.486043 )
 rotation = 1.58218
@@ -864,7 +984,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Stick" type="CollisionShape2D" parent="Players/Rigth4/StickMan" index="1"]
+[node name="Stick" type="CollisionShape2D" parent="Game/Players/Rigth4/StickMan" index="1"]
 
 position = Vector2( -15.2145, 1.62357 )
 rotation = 1.56594
@@ -874,7 +994,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerMan" type="KinematicBody2D" parent="Players/Rigth4" index="1"]
+[node name="PlayerMan" type="KinematicBody2D" parent="Game/Players/Rigth4" index="1"]
 
 editor/display_folded = true
 input_pickable = false
@@ -886,7 +1006,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth4/PlayerMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Rigth4/PlayerMan" index="0"]
 
 scale = Vector2( 0.124047, 0.124418 )
 frames = SubResource( 8 )
@@ -896,7 +1016,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerCollision" type="CollisionPolygon2D" parent="Players/Rigth4/PlayerMan" index="1"]
+[node name="PlayerCollision" type="CollisionPolygon2D" parent="Game/Players/Rigth4/PlayerMan" index="1"]
 
 build_mode = 0
 polygon = PoolVector2Array( -8.40726, -16.9117, 6.82913, -17.3389, 16.6545, -7.79834, 16.7969, 8.43481, 7.25632, 16.8362, -7.69528, 16.5514, -17.0934, 7.29565, -16.6662, -8.51033 )
@@ -904,14 +1024,14 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Rigth5" type="Node2D" parent="Players" index="7"]
+[node name="Rigth5" type="Node2D" parent="Game/Players" index="7"]
 
 editor/display_folded = true
 position = Vector2( -101.076, -80.2484 )
 script = ExtResource( 15 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="StickMan" type="KinematicBody2D" parent="Players/Rigth5" index="0"]
+[node name="StickMan" type="KinematicBody2D" parent="Game/Players/Rigth5" index="0"]
 
 editor/display_folded = true
 position = Vector2( 39.0845, -0.191833 )
@@ -926,7 +1046,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth5/StickMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Rigth5/StickMan" index="0"]
 
 position = Vector2( 4.73881, 0.486043 )
 rotation = 1.58218
@@ -937,7 +1057,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Stick" type="CollisionShape2D" parent="Players/Rigth5/StickMan" index="1"]
+[node name="Stick" type="CollisionShape2D" parent="Game/Players/Rigth5/StickMan" index="1"]
 
 position = Vector2( -15.2145, 1.62357 )
 rotation = 1.56594
@@ -947,7 +1067,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerMan" type="KinematicBody2D" parent="Players/Rigth5" index="1"]
+[node name="PlayerMan" type="KinematicBody2D" parent="Game/Players/Rigth5" index="1"]
 
 editor/display_folded = true
 input_pickable = false
@@ -959,7 +1079,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/Rigth5/PlayerMan" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/Rigth5/PlayerMan" index="0"]
 
 scale = Vector2( 0.124047, 0.124418 )
 frames = SubResource( 8 )
@@ -969,7 +1089,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="PlayerCollision" type="CollisionPolygon2D" parent="Players/Rigth5/PlayerMan" index="1"]
+[node name="PlayerCollision" type="CollisionPolygon2D" parent="Game/Players/Rigth5/PlayerMan" index="1"]
 
 build_mode = 0
 polygon = PoolVector2Array( -8.40726, -16.9117, 6.82913, -17.3389, 16.6545, -7.79834, 16.7969, 8.43481, 7.25632, 16.8362, -7.69528, 16.5514, -17.0934, 7.29565, -16.6662, -8.51033 )
@@ -977,12 +1097,12 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="GoalKeeperRed" type="Node2D" parent="Players" index="8"]
+[node name="GoalKeeperRed" type="Node2D" parent="Game/Players" index="8"]
 
 editor/display_folded = true
 position = Vector2( -358.627, 6.02975 )
 
-[node name="StickManGoal" type="KinematicBody2D" parent="Players/GoalKeeperRed" index="0"]
+[node name="StickManGoal" type="KinematicBody2D" parent="Game/Players/GoalKeeperRed" index="0"]
 
 position = Vector2( -2.22101, -2.05219 )
 scale = Vector2( 0.293992, 0.520579 )
@@ -996,7 +1116,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/GoalKeeperRed/StickManGoal" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/GoalKeeperRed/StickManGoal" index="0"]
 
 position = Vector2( -3.4879, -0.946372 )
 scale = Vector2( 0.325852, 0.214692 )
@@ -1006,7 +1126,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Stick" type="CollisionShape2D" parent="Players/GoalKeeperRed/StickManGoal" index="1"]
+[node name="Stick" type="CollisionShape2D" parent="Game/Players/GoalKeeperRed/StickManGoal" index="1"]
 
 position = Vector2( -4.5062, -0.371337 )
 scale = Vector2( 3.28966, 2.78533 )
@@ -1015,12 +1135,12 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="GoalKeeperGoal" type="Node2D" parent="Players" index="9"]
+[node name="GoalKeeperGoal" type="Node2D" parent="Game/Players" index="9"]
 
 editor/display_folded = true
 position = Vector2( 358.993, 3.58621 )
 
-[node name="StickManGoal" type="KinematicBody2D" parent="Players/GoalKeeperGoal" index="0"]
+[node name="StickManGoal" type="KinematicBody2D" parent="Game/Players/GoalKeeperGoal" index="0"]
 
 editor/display_folded = true
 position = Vector2( -2.22101, -2.05219 )
@@ -1035,7 +1155,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Players/GoalKeeperGoal/StickManGoal" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/GoalKeeperGoal/StickManGoal" index="0"]
 
 position = Vector2( -3.4879, -0.946372 )
 scale = Vector2( 0.325852, 0.214692 )
@@ -1045,7 +1165,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Stick" type="CollisionShape2D" parent="Players/GoalKeeperGoal/StickManGoal" index="1"]
+[node name="Stick" type="CollisionShape2D" parent="Game/Players/GoalKeeperGoal/StickManGoal" index="1"]
 
 position = Vector2( -4.5062, -0.371337 )
 scale = Vector2( 3.28966, 2.78533 )
@@ -1054,24 +1174,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="GUI" type="Control" parent="." index="5"]
+[node name="ScoreBoard" type="Panel" parent="Game" index="5"]
 
 editor/display_folded = true
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_right = 40.0
-margin_bottom = 40.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-
-[node name="ScoreBoard" type="Panel" parent="GUI" index="0"]
-
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1087,7 +1192,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 _sections_unfolded = [ "custom_styles" ]
 
-[node name="HBoxContainer" type="HBoxContainer" parent="GUI/ScoreBoard" index="0"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Game/ScoreBoard" index="0"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -1104,7 +1209,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 1
 
-[node name="Red" type="Label" parent="GUI/ScoreBoard/HBoxContainer" index="0"]
+[node name="Red" type="Label" parent="Game/ScoreBoard/HBoxContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -1126,7 +1231,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Theme", "custom_fonts" ]
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="GUI/ScoreBoard" index="1"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="Game/ScoreBoard" index="1"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -1144,7 +1249,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 1
 
-[node name="Blue" type="Label" parent="GUI/ScoreBoard/HBoxContainer3" index="0"]
+[node name="Blue" type="Label" parent="Game/ScoreBoard/HBoxContainer3" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -1166,15 +1271,16 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Theme", "custom_fonts" ]
 
-[node name="RedScoreBox" type="HBoxContainer" parent="GUI/ScoreBoard" index="2"]
+[node name="RedScoreBox" type="HBoxContainer" parent="Game/ScoreBoard" index="2"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 31.0
+margin_top = 26.0
 margin_right = 119.0
-margin_bottom = 63.0
+margin_bottom = 58.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -1183,7 +1289,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 1
 
-[node name="RedScoreLabel" type="Label" parent="GUI/ScoreBoard/RedScoreBox" index="0"]
+[node name="RedScoreLabel" type="Label" parent="Game/ScoreBoard/RedScoreBox" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -1205,17 +1311,21 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="BlueScoreBox" type="HBoxContainer" parent="GUI/ScoreBoard" index="3"]
+[node name="BlueScoreBox" type="HBoxContainer" parent="Game/ScoreBoard" index="3"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 201.0
-margin_top = 31.0
+margin_top = 26.0
 margin_right = 316.0
-margin_bottom = 56.0
+margin_bottom = 58.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -1224,7 +1334,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 1
 
-[node name="BlueScoreLabel" type="Label" parent="GUI/ScoreBoard/BlueScoreBox" index="0"]
+[node name="BlueScoreLabel" type="Label" parent="Game/ScoreBoard/BlueScoreBox" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -1246,8 +1356,11 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Time" type="HBoxContainer" parent="GUI/ScoreBoard" index="4"]
+[node name="Time" type="HBoxContainer" parent="Game/ScoreBoard" index="4"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -1265,7 +1378,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 1
 
-[node name="TimeLabel" type="Label" parent="GUI/ScoreBoard/Time" index="0"]
+[node name="TimeLabel" type="Label" parent="Game/ScoreBoard/Time" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -1292,8 +1405,245 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="GUI" type="Control" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="NewGamePanel" type="Panel" parent="GUI" index="0"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -3.0
+margin_right = 1028.0
+margin_bottom = 603.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = SubResource( 13 )
+_sections_unfolded = [ "Material", "custom_styles" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Snow" type="AnimatedSprite" parent="GUI/NewGamePanel" index="0"]
+
+position = Vector2( 513.834, 301 )
+scale = Vector2( 3.40933, 3.00213 )
+frames = SubResource( 14 )
+animation = "default"
+frame = 14
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NewGamePanel" type="VBoxContainer" parent="GUI/NewGamePanel" index="1"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 414.0
+margin_top = 331.0
+margin_right = 634.0
+margin_bottom = 503.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TimeButton" type="OptionButton" parent="GUI/NewGamePanel/NewGamePanel" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 16.0
+margin_right = 220.0
+margin_bottom = 46.0
+rect_min_size = Vector2( 10, 30 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+action_mode = 0
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Time"
+flat = false
+align = 1
+items = [  ]
+selected = -1
+_sections_unfolded = [ "Anchor", "Margin", "Rect" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ModeButon" type="OptionButton" parent="GUI/NewGamePanel/NewGamePanel" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 50.0
+margin_right = 220.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 0, 30 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+action_mode = 0
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Mode"
+flat = false
+align = 1
+items = [  ]
+selected = -1
+_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HSeparator" type="HSeparator" parent="GUI/NewGamePanel/NewGamePanel" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 84.0
+margin_right = 220.0
+margin_bottom = 88.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NewGame" type="Button" parent="GUI/NewGamePanel/NewGamePanel" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 92.0
+margin_right = 220.0
+margin_bottom = 122.0
+rect_min_size = Vector2( 0, 30 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Start Game"
+flat = false
+align = 1
+_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Exit" type="Button" parent="GUI/NewGamePanel/NewGamePanel" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 126.0
+margin_right = 220.0
+margin_bottom = 156.0
+rect_min_size = Vector2( 0, 30 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Exit"
+flat = false
+align = 1
+_sections_unfolded = [ "Material", "Rect", "Theme", "Visibility" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="GUI/NewGamePanel" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 165.0
+margin_top = 80.0
+margin_right = 893.0
+margin_bottom = 249.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 41 )
+expand = true
+stretch_mode = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="GoalInfo" type="Panel" parent="GUI" index="1"]
 
+editor/display_folded = true
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1308,6 +1658,9 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="GUI/GoalInfo" index="0"]
 
@@ -1315,7 +1668,6 @@ position = Vector2( 123.123, 100.781 )
 scale = Vector2( 0.472318, 0.521402 )
 frames = SubResource( 12 )
 animation = "New Anim"
-frame = 7
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -1338,6 +1690,9 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 1
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="PlayerScoredLabel" type="Label" parent="GUI/GoalInfo/GoalBox" index="0"]
 
@@ -1359,9 +1714,307 @@ text = "Red Scores!"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="audio" type="Control" parent="." index="6"]
+[node name="PausePanel" type="Panel" parent="GUI" index="2"]
 
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 255.0
+margin_top = 141.0
+margin_right = 748.0
+margin_bottom = 465.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = SubResource( 15 )
+_sections_unfolded = [ "Material", "Visibility", "custom_styles" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="GUI/PausePanel" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 27.0
+margin_top = 39.0
+margin_right = 471.0
+margin_bottom = 175.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 54 )
+stretch_mode = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI/PausePanel" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 182.0
+margin_top = 169.0
+margin_right = 308.0
+margin_bottom = 313.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="continue" type="Button" parent="GUI/PausePanel/VBoxContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 40.0
+margin_right = 126.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 0, 30 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Continue"
+flat = false
+align = 1
+_sections_unfolded = [ "Margin", "Rect" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="mainMenu" type="Button" parent="GUI/PausePanel/VBoxContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 74.0
+margin_right = 126.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 0, 30 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Main Menu"
+flat = false
+align = 1
+_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GameOverPanel" type="Panel" parent="GUI" index="3"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 293.0
+margin_top = 146.0
+margin_right = 721.0
+margin_bottom = 462.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = SubResource( 16 )
+_sections_unfolded = [ "custom_styles" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI/GameOverPanel" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 103.0
+margin_top = 145.0
+margin_right = 328.0
+margin_bottom = 185.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlayerInfo" type="Label" parent="GUI/GameOverPanel/VBoxContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 13.0
+margin_right = 225.0
+margin_bottom = 27.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Player2 Wins!"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="GUI/GameOverPanel" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 163.0
+margin_top = 205.0
+margin_right = 264.0
+margin_bottom = 245.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Rematch" type="Button" parent="GUI/GameOverPanel/VBoxContainer2" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 101.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 0, 30 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Rematch"
+flat = false
+align = 1
+_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Main Menu" type="Button" parent="GUI/GameOverPanel/VBoxContainer2" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 34.0
+margin_right = 101.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 0, 30 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Main Menu"
+flat = false
+align = 1
+_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="GUI/GameOverPanel" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 14.0
+margin_top = 43.0
+margin_right = 415.0
+margin_bottom = 141.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 55 )
+expand = true
+stretch_mode = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="audio" type="Control" parent="." index="2"]
+
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1374,10 +2027,13 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="music" type="AudioStreamPlayer" parent="audio" index="0"]
 
-stream = ExtResource( 33 )
+stream = ExtResource( 56 )
 volume_db = -10.0
 pitch_scale = 1.0
 autoplay = false
@@ -1386,7 +2042,7 @@ bus = "Master"
 
 [node name="crowd" type="AudioStreamPlayer" parent="audio" index="1"]
 
-stream = ExtResource( 34 )
+stream = ExtResource( 57 )
 volume_db = -15.0
 pitch_scale = 1.0
 autoplay = false
@@ -1395,7 +2051,7 @@ bus = "Master"
 
 [node name="put1" type="AudioStreamPlayer" parent="audio" index="2"]
 
-stream = ExtResource( 35 )
+stream = ExtResource( 58 )
 volume_db = -10.0
 pitch_scale = 1.0
 autoplay = false
@@ -1404,7 +2060,7 @@ bus = "Master"
 
 [node name="put2" type="AudioStreamPlayer" parent="audio" index="3"]
 
-stream = ExtResource( 36 )
+stream = ExtResource( 59 )
 volume_db = -10.0
 pitch_scale = 1.0
 autoplay = false
@@ -1413,7 +2069,7 @@ bus = "Master"
 
 [node name="goal" type="AudioStreamPlayer" parent="audio" index="4"]
 
-stream = ExtResource( 37 )
+stream = ExtResource( 60 )
 volume_db = -10.0
 pitch_scale = 1.0
 autoplay = false
@@ -1422,7 +2078,7 @@ bus = "Master"
 
 [node name="hit" type="AudioStreamPlayer" parent="audio" index="5"]
 
-stream = ExtResource( 38 )
+stream = ExtResource( 61 )
 volume_db = -10.0
 pitch_scale = 1.0
 autoplay = false
