@@ -512,15 +512,12 @@ __meta__ = {
 
 [node name="Players" type="Node2D" parent="Game" index="4"]
 
-position = Vector2( 510.803, 299.169 )
-__meta__ = {
-"_edit_lock_": true
-}
+_sections_unfolded = [ "Transform" ]
 
 [node name="Left1" type="Node2D" parent="Game/Players" index="0"]
 
 editor/display_folded = true
-position = Vector2( -295.187, -115.008 )
+position = Vector2( 215.616, 184.161 )
 script = ExtResource( 10 )
 _sections_unfolded = [ "Pause" ]
 
@@ -592,7 +589,7 @@ __meta__ = {
 [node name="Left2" type="Node2D" parent="Game/Players" index="1"]
 
 editor/display_folded = true
-position = Vector2( -295.187, 118.74 )
+position = Vector2( 215.616, 417.909 )
 script = ExtResource( 10 )
 _sections_unfolded = [ "Pause" ]
 
@@ -666,7 +663,7 @@ __meta__ = {
 [node name="Left4" type="Node2D" parent="Game/Players" index="2"]
 
 editor/display_folded = true
-position = Vector2( 105.582, 86.7972 )
+position = Vector2( 616.385, 385.966 )
 script = ExtResource( 10 )
 _sections_unfolded = [ "Pause" ]
 
@@ -738,7 +735,7 @@ __meta__ = {
 [node name="Left5" type="Node2D" parent="Game/Players" index="3"]
 
 editor/display_folded = true
-position = Vector2( 104.163, -85.234 )
+position = Vector2( 614.966, 213.935 )
 script = ExtResource( 10 )
 _sections_unfolded = [ "Pause" ]
 
@@ -810,7 +807,8 @@ __meta__ = {
 
 [node name="Rigth1" type="Node2D" parent="Game/Players" index="4"]
 
-position = Vector2( 291.66, -113.9 )
+editor/display_folded = true
+position = Vector2( 802.463, 185.269 )
 script = ExtResource( 15 )
 _sections_unfolded = [ "Pause" ]
 
@@ -883,7 +881,7 @@ __meta__ = {
 [node name="Rigth2" type="Node2D" parent="Game/Players" index="5"]
 
 editor/display_folded = true
-position = Vector2( 290.925, 119.125 )
+position = Vector2( 801.728, 418.294 )
 script = ExtResource( 15 )
 _sections_unfolded = [ "Pause" ]
 
@@ -956,7 +954,7 @@ __meta__ = {
 [node name="Rigth4" type="Node2D" parent="Game/Players" index="6"]
 
 editor/display_folded = true
-position = Vector2( -101.85, 75.7812 )
+position = Vector2( 408.953, 374.95 )
 script = ExtResource( 15 )
 _sections_unfolded = [ "Pause" ]
 
@@ -1028,7 +1026,7 @@ __meta__ = {
 [node name="Rigth5" type="Node2D" parent="Game/Players" index="7"]
 
 editor/display_folded = true
-position = Vector2( -101.076, -80.2484 )
+position = Vector2( 409.727, 218.921 )
 script = ExtResource( 15 )
 _sections_unfolded = [ "Pause" ]
 
@@ -1100,7 +1098,8 @@ __meta__ = {
 
 [node name="GoalKeeperRed" type="Node2D" parent="Game/Players" index="8"]
 
-position = Vector2( -358.627, 6.02975 )
+editor/display_folded = true
+position = Vector2( 152.176, 305.199 )
 
 [node name="StickManGoal" type="KinematicBody2D" parent="Game/Players/GoalKeeperRed" index="0"]
 
@@ -1138,11 +1137,10 @@ __meta__ = {
 
 [node name="GoalKeeperBlue" type="Node2D" parent="Game/Players" index="9"]
 
-position = Vector2( 358.993, 3.58621 )
+position = Vector2( 869.796, 302.755 )
 
 [node name="StickManGoal" type="KinematicBody2D" parent="Game/Players/GoalKeeperBlue" index="0"]
 
-editor/display_folded = true
 position = Vector2( -2.22101, -2.05219 )
 scale = Vector2( 0.293992, 0.520579 )
 input_pickable = false
@@ -1170,6 +1168,7 @@ __meta__ = {
 position = Vector2( -4.5062, -0.371337 )
 scale = Vector2( 3.28966, 2.78533 )
 shape = SubResource( 10 )
+_sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1423,6 +1422,7 @@ size_flags_vertical = 1
 [node name="NewGamePanel" type="Panel" parent="GUI" index="0"]
 
 editor/display_folded = true
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1448,7 +1448,7 @@ position = Vector2( 513.834, 301 )
 scale = Vector2( 3.40933, 3.00213 )
 frames = SubResource( 14 )
 animation = "default"
-frame = 18
+frame = 14
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -1668,7 +1668,7 @@ position = Vector2( 123.123, 100.781 )
 scale = Vector2( 0.472318, 0.521402 )
 frames = SubResource( 12 )
 animation = "New Anim"
-frame = 8
+frame = 5
 playing = true
 __meta__ = {
 "_edit_lock_": true

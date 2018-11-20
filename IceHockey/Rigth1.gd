@@ -6,6 +6,11 @@ var INIT_ROT
 var moving
 
 var root
+var disk
+
+var entered
+
+const CLOSE = 50
 
 const SPEED = 5*PI #duas voltas por segundo
 
@@ -14,13 +19,16 @@ func _ready():
 	ROT_MAX_S = rotation + PI
 	INIT_ROT = rotation
 	moving = false
+	entered = false
 	root = get_tree().get_root().get_node("IceHockey")
+	disk = root.get_node("Game/Disk")
 	pass
 
 func _process(delta):
 	
 	if !root.playing:
 		return
+		
 	
 	var increment = SPEED*delta
 	
@@ -53,5 +61,20 @@ func _process(delta):
 		else:
 			rotate(-increment)
 			moving = true
+			
+	if root.gametype != null && root.gametype == 2:
+		if disk.position.distance_to(position) < CLOSE:
+			entered = true
+			if position.y < disk.position.y:
+				root.rigthUp = false
+				root.rigthDown = true
+			elif position.y > disk.position.y:
+				root.rigthUp = true
+				root.rigthDown = false
+				
+	if entered && disk.position.distance_to(position) > CLOSE:
+		entered = false
+		root.rigthUp = false
+		root.rigthDown = false
 
 	pass
