@@ -18,10 +18,10 @@ func _process(delta):
 	if !root.playing:
 		return
 	
-	if root.rigthGoalUp && curr >= MAX_UP:
+	if root.leftGoalUp && curr >= MAX_UP:
 		move_local_y(-mov_speed_inc)
 		curr -= mov_speed_inc
-	elif root.rigthGoalDown  && curr <= MAX_DN:
+	elif root.leftGoalDown  && curr <= MAX_DN:
 		move_local_y(mov_speed_inc)
 		curr += mov_speed_inc
 

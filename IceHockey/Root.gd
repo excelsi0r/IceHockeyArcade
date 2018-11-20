@@ -28,9 +28,10 @@ var gameover
 var goalSound
 var organMusic
 var crowdSound
+var hornSound
 
 var countdown
-const TIME_02 = 10
+const TIME_02 = 120
 const TIME_05 = 300
 const TIME_10 = 600
 
@@ -42,6 +43,18 @@ var pauseContinueButton
 var pauseMainMenuButton
 var gameOverRematch
 var gameOverMainMenu
+
+const deadzone = 0.2
+
+var leftDown
+var leftUp
+var leftGoalDown
+var leftGoalUp
+
+var rigthDown
+var rigthUp
+var rigthGoalDown
+var rigthGoalUp
 
 func _ready():
 	game = get_node("Game")
@@ -80,13 +93,14 @@ func _ready():
 	timeGameButton.add_item("10:00")
 	
 	modeGameButton = get_node("GUI/NewGamePanel/NewGamePanel/ModeButon")
-	modeGameButton.add_item("AI")
 	modeGameButton.add_item("Loner")
 	modeGameButton.add_item("Multi")
+	modeGameButton.add_item("AI")
 	
 	goalSound = get_node("audio/goal")
 	organMusic = get_node("audio/music")
 	crowdSound = get_node("audio/crowd")
+	hornSound = get_node("audio/gameover")
 	
 	menu.visible = true
 	game.visible = false
@@ -97,6 +111,73 @@ func _ready():
 	pass
 
 func _process(delta):
+	
+	if Input.is_key_pressed(KEY_W) || (Input.get_connected_joypads().size() > 0 &&  Input.is_joy_button_pressed(0,JOY_XBOX_Y)):
+		leftUp = true
+	else:
+		leftUp = false
+		
+	if 	Input.is_key_pressed(KEY_S) || (Input.get_connected_joypads().size() > 0 &&  Input.is_joy_button_pressed(0,JOY_XBOX_A)):
+		leftDown = true
+	else:
+		leftDown = false
+		
+	if Input.is_action_pressed("ui_up") || (Input.get_connected_joypads().size() > 0 &&  Input.get_joy_axis(0,JOY_AXIS_1) < -deadzone):
+		leftGoalUp = true
+	else:
+		leftGoalUp = false
+		
+	if Input.is_action_pressed("ui_down") || (Input.get_connected_joypads().size() > 0 &&  Input.get_joy_axis(0,JOY_AXIS_1) > deadzone):
+		leftGoalDown = true
+	else:
+		leftGoalDown = false
+		
+	
+	if gametype != null && gametype == 0:
+		if Input.is_key_pressed(KEY_W) || (Input.get_connected_joypads().size() > 0 &&  Input.is_joy_button_pressed(0,JOY_XBOX_Y)):
+			rigthUp = true
+		else:
+			rigthUp = false
+			
+		if 	Input.is_key_pressed(KEY_S) || (Input.get_connected_joypads().size() > 0 &&  Input.is_joy_button_pressed(0,JOY_XBOX_A)):
+			rigthDown = true
+		else:
+			rigthDown = false
+			
+		if Input.is_action_pressed("ui_up") || (Input.get_connected_joypads().size() > 0 &&  Input.get_joy_axis(0,JOY_AXIS_1) < -deadzone):
+			rigthGoalUp = true
+		else:
+			rigthGoalUp = false
+			
+		if Input.is_action_pressed("ui_down") || (Input.get_connected_joypads().size() > 0 &&  Input.get_joy_axis(0,JOY_AXIS_1) > deadzone):
+			rigthGoalDown = true
+		else:
+			rigthGoalDown = false
+	
+	if gametype != null && gametype == 1:
+		if Input.get_connected_joypads().size() > 1 &&  Input.is_joy_button_pressed(1,JOY_XBOX_Y):
+			rigthUp = true
+		else:
+			rigthUp = false
+			
+		if 	Input.get_connected_joypads().size() > 1 &&  Input.is_joy_button_pressed(1,JOY_XBOX_A):
+			rigthDown = true
+		else:
+			rigthDown = false
+			
+		if Input.get_connected_joypads().size() > 1  &&  Input.get_joy_axis(1,JOY_AXIS_1) < -deadzone:
+			rigthGoalUp = true
+		else:
+			rigthGoalUp = false
+			
+		if Input.get_connected_joypads().size() > 1  &&  Input.get_joy_axis(1,JOY_AXIS_1) > deadzone:
+			rigthGoalDown = true
+		else:
+			rigthGoalDown = false
+	
+	
+		
+	
 	
 	if Input.is_action_just_pressed("ui_cancel") && playing && !paused:	
 		pause_game(true)
@@ -140,10 +221,13 @@ func start_game():
 	menu.visible = false
 	pause.visible = false
 	game.visible = true
+	organMusic.play()
+	crowdSound.play()
 	pass
 
 func gameover_game(toGameOver):
 	if toGameOver:
+		hornSound.play()
 		playing = false
 		gameoverState = true
 		gameover.visible = true
@@ -161,10 +245,13 @@ func pause_game(toPause):
 		paused = true
 		playing = false
 		pause.visible = true
+		crowdSound.stop()
 	elif !toPause:
 		paused = false
 		playing = true
 		pause.visible = false
+		crowdSound.play()
+	pass
 	
 	
 func redScore():

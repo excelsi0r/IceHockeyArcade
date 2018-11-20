@@ -27,26 +27,26 @@ func _process(delta):
 	var incremented_rotation_w = rotation - increment
 	var incremented_rotation_s = rotation + increment
 	
-	if Input.is_key_pressed(KEY_W) && incremented_rotation_w > ROT_MAX_W:
+	if root.rigthUp && incremented_rotation_w > ROT_MAX_W:
 		rotate(-increment)
 		moving = true
-	elif Input.is_key_pressed(KEY_W) && incremented_rotation_w <= ROT_MAX_W:
+	elif root.rigthUp && incremented_rotation_w <= ROT_MAX_W:
 		rotation = ROT_MAX_W
 		moving = false
-	elif !Input.is_key_pressed(KEY_W) && !Input.is_key_pressed(KEY_S) && rotation < INIT_ROT:
+	elif !root.rigthUp && !root.rigthDown && rotation < INIT_ROT:
 		if rotation + (increment) > INIT_ROT:
 			rotation = INIT_ROT
 			moving = false
 		else:
 			rotate(increment)
 			moving = true
-	elif Input.is_key_pressed(KEY_S) && incremented_rotation_s < ROT_MAX_S:
+	elif root.rigthDown && incremented_rotation_s < ROT_MAX_S:
 		rotate(increment)
 		moving = true
-	elif Input.is_key_pressed(KEY_S) && incremented_rotation_s >= ROT_MAX_S:
+	elif root.rigthDown && incremented_rotation_s >= ROT_MAX_S:
 		rotation = ROT_MAX_S
 		moving = false
-	elif !Input.is_key_pressed(KEY_W) && !Input.is_key_pressed(KEY_S) && rotation > INIT_ROT:
+	elif !root.rigthUp && !root.rigthDown && rotation > INIT_ROT:
 		if rotation - (increment) < INIT_ROT:
 			rotation = INIT_ROT
 			moving = false

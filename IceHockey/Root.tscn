@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=2]
+[gd_scene load_steps=80 format=2]
 
 [ext_resource path="res://Root.gd" type="Script" id=1]
 [ext_resource path="res://textures/hockey_no_background_white.png" type="Texture" id=2]
@@ -16,51 +16,53 @@
 [ext_resource path="res://textures/player-red.png" type="Texture" id=14]
 [ext_resource path="res://Rigth1.gd" type="Script" id=15]
 [ext_resource path="res://textures/player-blue.png" type="Texture" id=16]
-[ext_resource path="res://KinematicBody2D.gd" type="Script" id=17]
+[ext_resource path="res://StickManGoal.gd" type="Script" id=17]
 [ext_resource path="res://textures/goalkeeper-red.png" type="Texture" id=18]
-[ext_resource path="res://textures/goalkeeper-blue.png" type="Texture" id=19]
-[ext_resource path="res://digital.tres" type="DynamicFont" id=20]
-[ext_resource path="res://anims/snow/output-onlinepngtools (0).png" type="Texture" id=21]
-[ext_resource path="res://anims/snow/output-onlinepngtools (1).png" type="Texture" id=22]
-[ext_resource path="res://anims/snow/output-onlinepngtools (2).png" type="Texture" id=23]
-[ext_resource path="res://anims/snow/output-onlinepngtools (3).png" type="Texture" id=24]
-[ext_resource path="res://anims/snow/output-onlinepngtools (4).png" type="Texture" id=25]
-[ext_resource path="res://anims/snow/output-onlinepngtools (5).png" type="Texture" id=26]
-[ext_resource path="res://anims/snow/output-onlinepngtools (6).png" type="Texture" id=27]
-[ext_resource path="res://anims/snow/output-onlinepngtools (7).png" type="Texture" id=28]
-[ext_resource path="res://anims/snow/output-onlinepngtools (8).png" type="Texture" id=29]
-[ext_resource path="res://anims/snow/output-onlinepngtools (9).png" type="Texture" id=30]
-[ext_resource path="res://anims/snow/output-onlinepngtools (10).png" type="Texture" id=31]
-[ext_resource path="res://anims/snow/output-onlinepngtools (11).png" type="Texture" id=32]
-[ext_resource path="res://anims/snow/output-onlinepngtools (12).png" type="Texture" id=33]
-[ext_resource path="res://anims/snow/output-onlinepngtools (13).png" type="Texture" id=34]
-[ext_resource path="res://anims/snow/output-onlinepngtools (14).png" type="Texture" id=35]
-[ext_resource path="res://anims/snow/output-onlinepngtools (15).png" type="Texture" id=36]
-[ext_resource path="res://anims/snow/output-onlinepngtools (16).png" type="Texture" id=37]
-[ext_resource path="res://anims/snow/output-onlinepngtools (17).png" type="Texture" id=38]
-[ext_resource path="res://anims/snow/output-onlinepngtools (18).png" type="Texture" id=39]
-[ext_resource path="res://anims/snow/output-onlinepngtools (19).png" type="Texture" id=40]
-[ext_resource path="res://textures/coollogo_com-12027292.png" type="Texture" id=41]
-[ext_resource path="res://anims/goal/output-onlinepngtools.png" type="Texture" id=42]
-[ext_resource path="res://anims/goal/output-onlinepngtools (1).png" type="Texture" id=43]
-[ext_resource path="res://anims/goal/output-onlinepngtools (2).png" type="Texture" id=44]
-[ext_resource path="res://anims/goal/output-onlinepngtools (3).png" type="Texture" id=45]
-[ext_resource path="res://anims/goal/output-onlinepngtools (4).png" type="Texture" id=46]
-[ext_resource path="res://anims/goal/output-onlinepngtools (5).png" type="Texture" id=47]
-[ext_resource path="res://anims/goal/output-onlinepngtools (6).png" type="Texture" id=48]
-[ext_resource path="res://anims/goal/output-onlinepngtools (7).png" type="Texture" id=49]
-[ext_resource path="res://anims/goal/output-onlinepngtools (8).png" type="Texture" id=50]
-[ext_resource path="res://anims/goal/output-onlinepngtools (9).png" type="Texture" id=51]
-[ext_resource path="res://anims/goal/output-onlinepngtools (10).png" type="Texture" id=52]
-[ext_resource path="res://anims/goal/output-onlinepngtools (11).png" type="Texture" id=53]
-[ext_resource path="res://textures/coollogo_com-26350116.png" type="Texture" id=54]
-[ext_resource path="res://textures/coollogo_com-1286292.png" type="Texture" id=55]
-[ext_resource path="res://sounds/hockey-arena-organ-song-10_cutted.wav" type="AudioStream" id=56]
-[ext_resource path="res://sounds/Sports_Crowd-GoGo-2100314571.wav" type="AudioStream" id=57]
-[ext_resource path="res://sounds/3766.wav" type="AudioStream" id=58]
-[ext_resource path="res://sounds/22373.wav" type="AudioStream" id=59]
-[ext_resource path="res://sounds/cheer2.wav" type="AudioStream" id=60]
-[ext_resource path="res://sounds/Putter Golf Ball-SoundBible.com-1207317863.wav" type="AudioStream" id=61]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=19]
+[ext_resource path="res://textures/goalkeeper-blue.png" type="Texture" id=20]
+[ext_resource path="res://digital.tres" type="DynamicFont" id=21]
+[ext_resource path="res://anims/snow/output-onlinepngtools (0).png" type="Texture" id=22]
+[ext_resource path="res://anims/snow/output-onlinepngtools (1).png" type="Texture" id=23]
+[ext_resource path="res://anims/snow/output-onlinepngtools (2).png" type="Texture" id=24]
+[ext_resource path="res://anims/snow/output-onlinepngtools (3).png" type="Texture" id=25]
+[ext_resource path="res://anims/snow/output-onlinepngtools (4).png" type="Texture" id=26]
+[ext_resource path="res://anims/snow/output-onlinepngtools (5).png" type="Texture" id=27]
+[ext_resource path="res://anims/snow/output-onlinepngtools (6).png" type="Texture" id=28]
+[ext_resource path="res://anims/snow/output-onlinepngtools (7).png" type="Texture" id=29]
+[ext_resource path="res://anims/snow/output-onlinepngtools (8).png" type="Texture" id=30]
+[ext_resource path="res://anims/snow/output-onlinepngtools (9).png" type="Texture" id=31]
+[ext_resource path="res://anims/snow/output-onlinepngtools (10).png" type="Texture" id=32]
+[ext_resource path="res://anims/snow/output-onlinepngtools (11).png" type="Texture" id=33]
+[ext_resource path="res://anims/snow/output-onlinepngtools (12).png" type="Texture" id=34]
+[ext_resource path="res://anims/snow/output-onlinepngtools (13).png" type="Texture" id=35]
+[ext_resource path="res://anims/snow/output-onlinepngtools (14).png" type="Texture" id=36]
+[ext_resource path="res://anims/snow/output-onlinepngtools (15).png" type="Texture" id=37]
+[ext_resource path="res://anims/snow/output-onlinepngtools (16).png" type="Texture" id=38]
+[ext_resource path="res://anims/snow/output-onlinepngtools (17).png" type="Texture" id=39]
+[ext_resource path="res://anims/snow/output-onlinepngtools (18).png" type="Texture" id=40]
+[ext_resource path="res://anims/snow/output-onlinepngtools (19).png" type="Texture" id=41]
+[ext_resource path="res://textures/coollogo_com-12027292.png" type="Texture" id=42]
+[ext_resource path="res://anims/goal/output-onlinepngtools.png" type="Texture" id=43]
+[ext_resource path="res://anims/goal/output-onlinepngtools (1).png" type="Texture" id=44]
+[ext_resource path="res://anims/goal/output-onlinepngtools (2).png" type="Texture" id=45]
+[ext_resource path="res://anims/goal/output-onlinepngtools (3).png" type="Texture" id=46]
+[ext_resource path="res://anims/goal/output-onlinepngtools (4).png" type="Texture" id=47]
+[ext_resource path="res://anims/goal/output-onlinepngtools (5).png" type="Texture" id=48]
+[ext_resource path="res://anims/goal/output-onlinepngtools (6).png" type="Texture" id=49]
+[ext_resource path="res://anims/goal/output-onlinepngtools (7).png" type="Texture" id=50]
+[ext_resource path="res://anims/goal/output-onlinepngtools (8).png" type="Texture" id=51]
+[ext_resource path="res://anims/goal/output-onlinepngtools (9).png" type="Texture" id=52]
+[ext_resource path="res://anims/goal/output-onlinepngtools (10).png" type="Texture" id=53]
+[ext_resource path="res://anims/goal/output-onlinepngtools (11).png" type="Texture" id=54]
+[ext_resource path="res://textures/coollogo_com-26350116.png" type="Texture" id=55]
+[ext_resource path="res://textures/coollogo_com-1286292.png" type="Texture" id=56]
+[ext_resource path="res://sounds/hockey-arena-organ-song-10_cutted.wav" type="AudioStream" id=57]
+[ext_resource path="res://sounds/Sports_Crowd-GoGo-2100314571.wav" type="AudioStream" id=58]
+[ext_resource path="res://sounds/3766.wav" type="AudioStream" id=59]
+[ext_resource path="res://sounds/22373.wav" type="AudioStream" id=60]
+[ext_resource path="res://sounds/cheer2.wav" type="AudioStream" id=61]
+[ext_resource path="res://sounds/Putter Golf Ball-SoundBible.com-1207317863.wav" type="AudioStream" id=62]
+[ext_resource path="res://sounds/Air Horn-SoundBible.com-964603082.wav" type="AudioStream" id=63]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -139,7 +141,7 @@ extents = Vector2( 10.3103, 11.6589 )
 [sub_resource type="SpriteFrames" id=11]
 
 animations = [ {
-"frames": [ ExtResource( 19 ) ],
+"frames": [ ExtResource( 20 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -177,7 +179,7 @@ _sections_unfolded = [ "Border" ]
 [sub_resource type="SpriteFrames" id=14]
 
 animations = [ {
-"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ) ],
+"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -186,7 +188,7 @@ animations = [ {
 [sub_resource type="SpriteFrames" id=12]
 
 animations = [ {
-"frames": [ ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ) ],
+"frames": [ ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ) ],
 "loop": true,
 "name": "New Anim",
 "speed": 5.0
@@ -510,7 +512,6 @@ __meta__ = {
 
 [node name="Players" type="Node2D" parent="Game" index="4"]
 
-editor/display_folded = true
 position = Vector2( 510.803, 299.169 )
 __meta__ = {
 "_edit_lock_": true
@@ -518,6 +519,7 @@ __meta__ = {
 
 [node name="Left1" type="Node2D" parent="Game/Players" index="0"]
 
+editor/display_folded = true
 position = Vector2( -295.187, -115.008 )
 script = ExtResource( 10 )
 _sections_unfolded = [ "Pause" ]
@@ -808,7 +810,6 @@ __meta__ = {
 
 [node name="Rigth1" type="Node2D" parent="Game/Players" index="4"]
 
-editor/display_folded = true
 position = Vector2( 291.66, -113.9 )
 script = ExtResource( 15 )
 _sections_unfolded = [ "Pause" ]
@@ -1099,11 +1100,11 @@ __meta__ = {
 
 [node name="GoalKeeperRed" type="Node2D" parent="Game/Players" index="8"]
 
-editor/display_folded = true
 position = Vector2( -358.627, 6.02975 )
 
 [node name="StickManGoal" type="KinematicBody2D" parent="Game/Players/GoalKeeperRed" index="0"]
 
+editor/display_folded = true
 position = Vector2( -2.22101, -2.05219 )
 scale = Vector2( 0.293992, 0.520579 )
 input_pickable = false
@@ -1135,12 +1136,11 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="GoalKeeperGoal" type="Node2D" parent="Game/Players" index="9"]
+[node name="GoalKeeperBlue" type="Node2D" parent="Game/Players" index="9"]
 
-editor/display_folded = true
 position = Vector2( 358.993, 3.58621 )
 
-[node name="StickManGoal" type="KinematicBody2D" parent="Game/Players/GoalKeeperGoal" index="0"]
+[node name="StickManGoal" type="KinematicBody2D" parent="Game/Players/GoalKeeperBlue" index="0"]
 
 editor/display_folded = true
 position = Vector2( -2.22101, -2.05219 )
@@ -1149,13 +1149,13 @@ input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
-script = ExtResource( 17 )
+script = ExtResource( 19 )
 _sections_unfolded = [ "Collision", "collision" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/GoalKeeperGoal/StickManGoal" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/Players/GoalKeeperBlue/StickManGoal" index="0"]
 
 position = Vector2( -3.4879, -0.946372 )
 scale = Vector2( 0.325852, 0.214692 )
@@ -1165,7 +1165,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Stick" type="CollisionShape2D" parent="Game/Players/GoalKeeperGoal/StickManGoal" index="1"]
+[node name="Stick" type="CollisionShape2D" parent="Game/Players/GoalKeeperBlue/StickManGoal" index="1"]
 
 position = Vector2( -4.5062, -0.371337 )
 scale = Vector2( 3.28966, 2.78533 )
@@ -1224,7 +1224,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 20 )
+custom_fonts/font = ExtResource( 21 )
 text = "Red"
 percent_visible = 1.0
 lines_skipped = 0
@@ -1264,7 +1264,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 20 )
+custom_fonts/font = ExtResource( 21 )
 text = "Blue"
 percent_visible = 1.0
 lines_skipped = 0
@@ -1304,7 +1304,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 20 )
+custom_fonts/font = ExtResource( 21 )
 custom_colors/font_color = Color( 1, 0.515625, 0, 1 )
 text = "0"
 percent_visible = 1.0
@@ -1349,7 +1349,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 20 )
+custom_fonts/font = ExtResource( 21 )
 custom_colors/font_color = Color( 1, 0.515625, 0, 1 )
 text = "0"
 percent_visible = 1.0
@@ -1394,7 +1394,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 20 )
+custom_fonts/font = ExtResource( 21 )
 custom_colors/font_color = Color( 1, 0, 0, 1 )
 text = "05:00"
 percent_visible = 1.0
@@ -1448,7 +1448,7 @@ position = Vector2( 513.834, 301 )
 scale = Vector2( 3.40933, 3.00213 )
 frames = SubResource( 14 )
 animation = "default"
-frame = 14
+frame = 18
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -1633,7 +1633,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 41 )
+texture = ExtResource( 42 )
 expand = true
 stretch_mode = 0
 __meta__ = {
@@ -1668,6 +1668,7 @@ position = Vector2( 123.123, 100.781 )
 scale = Vector2( 0.472318, 0.521402 )
 frames = SubResource( 12 )
 animation = "New Anim"
+frame = 8
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -1758,7 +1759,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 54 )
+texture = ExtResource( 55 )
 stretch_mode = 0
 __meta__ = {
 "_edit_lock_": true
@@ -2005,7 +2006,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 55 )
+texture = ExtResource( 56 )
 expand = true
 stretch_mode = 0
 __meta__ = {
@@ -2014,7 +2015,6 @@ __meta__ = {
 
 [node name="audio" type="Control" parent="." index="2"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -2033,7 +2033,7 @@ __meta__ = {
 
 [node name="music" type="AudioStreamPlayer" parent="audio" index="0"]
 
-stream = ExtResource( 56 )
+stream = ExtResource( 57 )
 volume_db = -10.0
 pitch_scale = 1.0
 autoplay = false
@@ -2042,7 +2042,7 @@ bus = "Master"
 
 [node name="crowd" type="AudioStreamPlayer" parent="audio" index="1"]
 
-stream = ExtResource( 57 )
+stream = ExtResource( 58 )
 volume_db = -15.0
 pitch_scale = 1.0
 autoplay = false
@@ -2051,7 +2051,7 @@ bus = "Master"
 
 [node name="put1" type="AudioStreamPlayer" parent="audio" index="2"]
 
-stream = ExtResource( 58 )
+stream = ExtResource( 59 )
 volume_db = -10.0
 pitch_scale = 1.0
 autoplay = false
@@ -2060,7 +2060,7 @@ bus = "Master"
 
 [node name="put2" type="AudioStreamPlayer" parent="audio" index="3"]
 
-stream = ExtResource( 59 )
+stream = ExtResource( 60 )
 volume_db = -10.0
 pitch_scale = 1.0
 autoplay = false
@@ -2069,7 +2069,7 @@ bus = "Master"
 
 [node name="goal" type="AudioStreamPlayer" parent="audio" index="4"]
 
-stream = ExtResource( 60 )
+stream = ExtResource( 61 )
 volume_db = -10.0
 pitch_scale = 1.0
 autoplay = false
@@ -2078,8 +2078,17 @@ bus = "Master"
 
 [node name="hit" type="AudioStreamPlayer" parent="audio" index="5"]
 
-stream = ExtResource( 61 )
+stream = ExtResource( 62 )
 volume_db = -10.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="gameover" type="AudioStreamPlayer" parent="audio" index="6"]
+
+stream = ExtResource( 63 )
+volume_db = 0.0
 pitch_scale = 1.0
 autoplay = false
 mix_target = 0
