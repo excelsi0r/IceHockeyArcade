@@ -2,4 +2,4 @@
 
 Ice Hokey Arcade game in Godot Engine
 
-https://github.com/excelsi0r/JD-Arcade/blob/master/img/ice_hockey_arcade(1080p).mp4
+https://user-images.githubusercontent.com/17499492/152450153-2226f14d-bf45-4b3a-8dff-7ddcf69a8aca.mp4
